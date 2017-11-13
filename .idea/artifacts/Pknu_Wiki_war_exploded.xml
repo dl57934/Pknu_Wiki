@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Pknu_Wiki:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Pknu_Wiki/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Pknu_Wiki" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
