@@ -1,4 +1,4 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -7,18 +7,18 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Elate &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title>PKNU WIKI</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
-  <!-- 
+  <!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -42,22 +42,22 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="../css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="../css/icomoon.css">
-	<!-- Simple Line Icons -->
-	<link rel="stylesheet" href="../css/simple-line-icons.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="../css/magnific-popup.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="../css/bootstrap.css">
 
-	<!-- 
-	Default Theme Style 
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css?ver=1">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css?ver=1">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="../css/simple-line-icons.css?ver=1">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="../css/magnific-popup.css?ver=1">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css?ver=1">
+
+	<!--
+	Default Theme Style
 	You can change the style.css (default color purple) to one of these styles
-	
+
 	1. pink.css
 	2. blue.css
 	3. turquoise.css
@@ -67,16 +67,16 @@
 	7. green.css
 
 	-->
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style.css?ver=1">
 
 	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
-	<link rel="stylesheet" id="theme-switch" href="../css/style.css">
+	<link rel="stylesheet" id="theme-switch" href="../css/style.css?ver=1">
 	<!-- End demo purposes only -->
 
 
 	<style>
 	/* For demo purpose only */
-	
+
 	/* For Demo Purposes Only ( You can delete this anytime :-) */
 	#colour-variations {
 		padding: 10px;
@@ -146,7 +146,7 @@
 		zoom: 1;
 		*display: inline;
 	}
-	
+
 
 	.option-toggle {
 		position: absolute;
@@ -196,7 +196,7 @@
 		        <div class="navbar-header">
 		        	<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		         <a class="navbar-brand" href="index.html">Elate</a> 
+		         <a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
 		        </div>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
@@ -213,15 +213,15 @@
 		  </div>
 	</header>
 
-	<section id="fh5co-home" data-section="home" style="background-image: url(../../../../Elate Free Website Template - Free-CSS.com/elate/images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-home" data-section="home" style="background-image: url(../images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
 		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
-							<h1 class="to-animate">Do something you love.</h1>
-							<h2 class="to-animate">Another free HTML5 bootstrap template by <a href="http://freehtml5.co/" target="_blank" title="Free HTML5 Bootstrap Templates">FREEHTML5.co</a> released under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons 3.0</a></h2>
+							<h1 class="to-animate">PKNU WIKI</h1>
+							<h2 class="to-animate">우리가 만들어가는 부경대 <br><a href="http://localhost:3000/PknuWiki/view/main.jsp" target="_blank">글작성하러 가기</a></h2>
 						</div>
 					</div>
 				</div>
@@ -233,41 +233,40 @@
 	<section id="fh5co-intro">
 		<div class="container">
 			<div class="row row-bottom-padded-lg">
-				<div class="fh5co-block to-animate" style="background-image: url(../../../../Elate Free Website Template - Free-CSS.com/elate/images/img_7.jpg);">
+				<div class="fh5co-block to-animate" style="background-image: url(../images/img_7.jpg);">
 					<div class="overlay-darker"></div>
 					<div class="overlay"></div>
 					<div class="fh5co-text">
-						<i class="fh5co-intro-icon icon-bulb"></i>
-						<h2>Plan</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="#" class="btn btn-primary">Get In Touch</a></p>
+						<i class="fh5co-intro-icon icon-lock"></i>
+						<h2>약정 등 규약</h2>
+						<p>글을 작성하기전 읽어보시고 작성해주세요. 글작성 가이드 라인등이 있습니다.</p>
+						<p><a href="#" class="btn btn-primary">읽어 보기</a></p>
 					</div>
 				</div>
-				<div class="fh5co-block to-animate" style="background-image: url(../../../../Elate Free Website Template - Free-CSS.com/elate/images/img_8.jpg);">
+				<div class="fh5co-block to-animate" style="background-image: url(../images/img_8.jpg);">
 					<div class="overlay-darker"></div>
 					<div class="overlay"></div>
 					<div class="fh5co-text">
-						<i class="fh5co-intro-icon icon-wrench"></i>
-						<h2>Develop</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="#" class="btn btn-primary">Click Me</a></p>
+						<i class="fh5co-intro-icon icon-login"></i>
+						<h2>로그인</h2>
+
+						<p><a href="#" class="btn btn-primary">로그인</a></p>
 					</div>
 				</div>
-				<div class="fh5co-block to-animate" style="background-image: url(../../../../Elate Free Website Template - Free-CSS.com/elate/images/img_10.jpg);">
+				<div class="fh5co-block to-animate" style="background-image: url(../images/img_10.jpg);">
 					<div class="overlay-darker"></div>
 					<div class="overlay"></div>
 					<div class="fh5co-text">
-						<i class="fh5co-intro-icon icon-rocket"></i>
-						<h2>Launch</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						<p><a href="#" class="btn btn-primary">Why Us?</a></p>
+						<i class="fh5co-intro-icon icon-user-plus"></i>
+						<h2>회원 가입</h2>
+						<p>회원가입을 하시면 글 작성 수정 등을 할 수 있습니다.</p>
+						<p><a href="#" class="btn btn-primary">회원가입</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="row watch-video text-center to-animate">
 				<span>Watch the video</span>
-
-				<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
+				<a href="https://www.youtube.com/watch?v=G4EVCwT6Z1Q" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
 			</div>
 		</div>
 	</section>
@@ -276,10 +275,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Work</h2>
+					<h2 class="to-animate">최근에 수정된 글</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+							<h3>최근에 바뀐 글들 입니다.</h3>
 						</div>
 					</div>
 				</div>
@@ -379,14 +378,8 @@
 					</a>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 text-center to-animate">
-					<p>* Demo images from <a href="http://plmd.me/" target="_blank">plmd.me</a></p>
-				</div>
-			</div>
 		</div>
 	</section>
-
 	<section id="fh5co-testimonials" data-section="testimonials">
 		<div class="container">
 			<div class="row">
@@ -544,7 +537,7 @@
 		</div>
 	</section>
 	
-	<section id="fh5co-counters" style="background-image: url(../../../../Elate Free Website Template - Free-CSS.com/elate/images/full_image_1.jpg);" data-stellar-background-ratio="0.5">
+	<section id="fh5co-counters" style="background-image: url(../images/full_image_1.jpg);" data-stellar-background-ratio="0.5">
 		<div class="fh5co-overlay"></div>
 		<div class="container">
 			<div class="row">
