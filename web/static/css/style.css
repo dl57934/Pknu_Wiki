@@ -435,6 +435,10 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
+#login_text{
+  color: white;
+  margin: 0 0 20px 0;
+}
 
 .slant {
   position: absolute;
@@ -483,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   min-height: 300px;
   vertical-align: middle;
-  padding: 40px;
+  padding: 50px;
   background: #fff;
   -webkit-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
   -moz-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
