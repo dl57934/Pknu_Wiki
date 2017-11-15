@@ -212,7 +212,7 @@
                 <input style="margin-left: 20%" type="text"> <input type="submit" class="btn btn-primary" value="찾기">
             </form>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right"></ul>
             </div>
         </nav>
         <!-- </div> -->
@@ -227,7 +227,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div style="padding-bottom: 180px">
                         <h1 class="to-animate">PKNU WIKI 로그인</h1>
-                        <form>
+                        <form method="post" action="/controller?action=login">
                             <br>
                             <br>
                         <div>

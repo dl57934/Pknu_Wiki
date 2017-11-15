@@ -256,7 +256,7 @@
 						<i class="fh5co-intro-icon icon-login"></i>
 						<h2>로그인</h2>
 
-						<p><a href="#" class="btn btn-primary">로그인</a></p>
+						<p><a href="login.jsp" class="btn btn-primary">로그인</a></p>
 					</div>
 				</div>
 				<div class="fh5co-block to-animate" style="background-image: url(../static/images/img_10.jpg);">
@@ -332,13 +332,9 @@
 						</div>
 					</div>
 				</div>
-				
-				
 			</div>
 		</div>
 	</section> -->
-
-
 	<section id="fh5co-services" data-section="work">
 		<div class="container">
 			<div class="row">
@@ -390,7 +386,7 @@
 				<div class="col-md-4">
 					<div class="fh5co-person text-center to-animate">
 						<figure><img src="../images/person1.jpg" alt="Image"></figure>
-						<h3>Jean Smith</h3>
+						<h3>이상훈</h3>
 						<span class="fh5co-position">Web Designer</span>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
 						<ul class="social social-circle">
@@ -403,7 +399,7 @@
 				<div class="col-md-4">
 					<div class="fh5co-person text-center to-animate">
 						<figure><img src="../images/person2.jpg" alt="Image"></figure>
-						<h3>Rob Smith</h3>
+						<h3>황선영</h3>
 						<span class="fh5co-position">Web Developer</span>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
 						<ul class="social social-circle">

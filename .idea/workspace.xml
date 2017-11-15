@@ -7,287 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a399034-e573-4914-80c8-e8e8b3ef19b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/view/login.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/animate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/icomoon.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/simple-line-icons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/style2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/style3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/css/style4.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/icomoon/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/icomoon/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/icomoon/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/icomoon/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/simple-line-icons/Simple-Line-Icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/simple-line-icons/Simple-Line-Icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/simple-line-icons/Simple-Line-Icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/simple-line-icons/Simple-Line-Icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/fonts/simple-line-icons/Simple-Line-Icons.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/full_image_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/full_image_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/images.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/img_10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/img_7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/img_8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/law_iconsArtboard_1-2-512.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/loc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/person1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/person2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/person3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/person4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/raw.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/rawFile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/work_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/work_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/work_3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/work_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/work_5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/work_6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/work_7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/images/work_8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/google_map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/jquery.countTo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/jquery.easing.1.3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/jquery.magnific-popup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/jquery.stellar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/jquery.style.switcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/jquery.waypoints.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/magnific-popup-options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/modernizr-2.6.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/js/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/_bootstrap-compass.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/_bootstrap-mincer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/_bootstrap-sprockets.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/blue.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_badges.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_breadcrumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_button-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_carousel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_close.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_code.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_component-animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_dropdowns.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_glyphicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_input-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_jumbotron.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_modals.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_navs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_pager.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_popovers.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_print.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_progress-bars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_responsive-embed.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_responsive-utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_theme.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_thumbnails.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_tooltip.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/_wells.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_background-variant.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_border-radius.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_center-block.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_clearfix.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_gradients.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_grid-framework.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_hide-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_nav-divider.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_nav-vertical-align.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_opacity.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_progress-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_reset-filter.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_reset-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_resize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_responsive-visibility.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_size.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_tab-focus.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_table-row.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_text-emphasis.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_text-overflow.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/bootstrap/mixins/_vendor-prefixes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/style.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/style2.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/style3.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/style4.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/sass/untitled.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/animate.css" afterPath="$PROJECT_DIR$/web/static/css/animate.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/blue.css" afterPath="$PROJECT_DIR$/web/static/css/blue.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/static/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/icomoon.css" afterPath="$PROJECT_DIR$/web/static/css/icomoon.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/magnific-popup.css" afterPath="$PROJECT_DIR$/web/static/css/magnific-popup.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/simple-line-icons.css" afterPath="$PROJECT_DIR$/web/static/css/simple-line-icons.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/static/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/style2.css" afterPath="$PROJECT_DIR$/web/static/css/style2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/style3.css" afterPath="$PROJECT_DIR$/web/static/css/style3.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/style4.css" afterPath="$PROJECT_DIR$/web/static/css/style4.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/web/static/fonts/bootstrap/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/web/static/fonts/bootstrap/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/web/static/fonts/bootstrap/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/web/static/fonts/bootstrap/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/web/static/fonts/bootstrap/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/icomoon/icomoon.eot" afterPath="$PROJECT_DIR$/web/static/fonts/icomoon/icomoon.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/icomoon/icomoon.svg" afterPath="$PROJECT_DIR$/web/static/fonts/icomoon/icomoon.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/icomoon/icomoon.ttf" afterPath="$PROJECT_DIR$/web/static/fonts/icomoon/icomoon.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/icomoon/icomoon.woff" afterPath="$PROJECT_DIR$/web/static/fonts/icomoon/icomoon.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/simple-line-icons/Simple-Line-Icons.eot" afterPath="$PROJECT_DIR$/web/static/fonts/simple-line-icons/Simple-Line-Icons.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/simple-line-icons/Simple-Line-Icons.svg" afterPath="$PROJECT_DIR$/web/static/fonts/simple-line-icons/Simple-Line-Icons.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/simple-line-icons/Simple-Line-Icons.ttf" afterPath="$PROJECT_DIR$/web/static/fonts/simple-line-icons/Simple-Line-Icons.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/simple-line-icons/Simple-Line-Icons.woff" afterPath="$PROJECT_DIR$/web/static/fonts/simple-line-icons/Simple-Line-Icons.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/fonts/simple-line-icons/Simple-Line-Icons.woff2" afterPath="$PROJECT_DIR$/web/static/fonts/simple-line-icons/Simple-Line-Icons.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/full_image_1.jpg" afterPath="$PROJECT_DIR$/web/static/images/full_image_1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/full_image_2.jpg" afterPath="$PROJECT_DIR$/web/static/images/full_image_2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/images.png" afterPath="$PROJECT_DIR$/web/static/images/images.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/img_10.jpg" afterPath="$PROJECT_DIR$/web/static/images/img_10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/img_7.jpg" afterPath="$PROJECT_DIR$/web/static/images/img_7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/img_8.jpg" afterPath="$PROJECT_DIR$/web/static/images/img_8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/law_iconsArtboard_1-2-512.png" afterPath="$PROJECT_DIR$/web/static/images/law_iconsArtboard_1-2-512.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/loc.png" afterPath="$PROJECT_DIR$/web/static/images/loc.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/person1.jpg" afterPath="$PROJECT_DIR$/web/static/images/person1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/person2.jpg" afterPath="$PROJECT_DIR$/web/static/images/person2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/person3.jpg" afterPath="$PROJECT_DIR$/web/static/images/person3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/person4.jpg" afterPath="$PROJECT_DIR$/web/static/images/person4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/raw.jpg" afterPath="$PROJECT_DIR$/web/static/images/raw.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/rawFile.png" afterPath="$PROJECT_DIR$/web/static/images/rawFile.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/work_1.jpg" afterPath="$PROJECT_DIR$/web/static/images/work_1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/work_2.jpg" afterPath="$PROJECT_DIR$/web/static/images/work_2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/work_3.jpg" afterPath="$PROJECT_DIR$/web/static/images/work_3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/work_4.jpg" afterPath="$PROJECT_DIR$/web/static/images/work_4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/work_5.jpg" afterPath="$PROJECT_DIR$/web/static/images/work_5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/work_6.jpg" afterPath="$PROJECT_DIR$/web/static/images/work_6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/work_7.jpg" afterPath="$PROJECT_DIR$/web/static/images/work_7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/work_8.jpg" afterPath="$PROJECT_DIR$/web/static/images/work_8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/web/static/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/google_map.js" afterPath="$PROJECT_DIR$/web/static/js/google_map.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/jquery.countTo.js" afterPath="$PROJECT_DIR$/web/static/js/jquery.countTo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/jquery.easing.1.3.js" afterPath="$PROJECT_DIR$/web/static/js/jquery.easing.1.3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/jquery.magnific-popup.min.js" afterPath="$PROJECT_DIR$/web/static/js/jquery.magnific-popup.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/jquery.min.js" afterPath="$PROJECT_DIR$/web/static/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/jquery.stellar.min.js" afterPath="$PROJECT_DIR$/web/static/js/jquery.stellar.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/jquery.style.switcher.js" afterPath="$PROJECT_DIR$/web/static/js/jquery.style.switcher.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/jquery.waypoints.min.js" afterPath="$PROJECT_DIR$/web/static/js/jquery.waypoints.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/magnific-popup-options.js" afterPath="$PROJECT_DIR$/web/static/js/magnific-popup-options.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/main.js" afterPath="$PROJECT_DIR$/web/static/js/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/modernizr-2.6.2.min.js" afterPath="$PROJECT_DIR$/web/static/js/modernizr-2.6.2.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/js/respond.min.js" afterPath="$PROJECT_DIR$/web/static/js/respond.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/_bootstrap-compass.scss" afterPath="$PROJECT_DIR$/web/static/sass/_bootstrap-compass.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/_bootstrap-mincer.scss" afterPath="$PROJECT_DIR$/web/static/sass/_bootstrap-mincer.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/_bootstrap-sprockets.scss" afterPath="$PROJECT_DIR$/web/static/sass/_bootstrap-sprockets.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/blue.scss" afterPath="$PROJECT_DIR$/web/static/sass/blue.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_alerts.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_alerts.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_badges.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_badges.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_breadcrumbs.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_breadcrumbs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_button-groups.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_button-groups.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_buttons.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_buttons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_carousel.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_carousel.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_close.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_close.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_code.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_code.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_component-animations.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_component-animations.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_dropdowns.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_dropdowns.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_forms.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_forms.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_glyphicons.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_glyphicons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_grid.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_grid.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_input-groups.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_input-groups.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_jumbotron.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_jumbotron.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_labels.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_labels.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_list-group.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_list-group.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_media.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_media.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_mixins.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_mixins.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_modals.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_modals.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_navbar.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_navbar.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_navs.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_navs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_normalize.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_normalize.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_pager.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_pager.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_pagination.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_pagination.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_panels.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_panels.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_popovers.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_popovers.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_print.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_print.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_progress-bars.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_progress-bars.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_responsive-embed.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_responsive-embed.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_responsive-utilities.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_responsive-utilities.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_scaffolding.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_scaffolding.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_tables.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_tables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_theme.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_theme.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_thumbnails.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_thumbnails.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_tooltip.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_tooltip.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_type.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_type.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_utilities.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_utilities.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_variables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/_wells.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/_wells.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_alerts.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_alerts.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_background-variant.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_background-variant.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_border-radius.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_border-radius.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_buttons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_center-block.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_center-block.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_clearfix.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_clearfix.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_forms.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_forms.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_gradients.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_gradients.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_grid-framework.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_grid-framework.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_grid.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_grid.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_hide-text.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_hide-text.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_image.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_image.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_labels.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_labels.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_list-group.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_list-group.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_nav-divider.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_nav-divider.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_nav-vertical-align.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_nav-vertical-align.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_opacity.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_opacity.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_pagination.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_pagination.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_panels.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_panels.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_progress-bar.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_progress-bar.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_reset-filter.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_reset-filter.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_reset-text.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_reset-text.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_resize.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_resize.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_responsive-visibility.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_responsive-visibility.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_size.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_size.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_tab-focus.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_tab-focus.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_table-row.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_table-row.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_text-emphasis.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_text-emphasis.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_text-overflow.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_text-overflow.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/bootstrap/mixins/_vendor-prefixes.scss" afterPath="$PROJECT_DIR$/web/static/sass/bootstrap/mixins/_vendor-prefixes.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/style.scss" afterPath="$PROJECT_DIR$/web/static/sass/style.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/style2.scss" afterPath="$PROJECT_DIR$/web/static/sass/style2.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/style3.scss" afterPath="$PROJECT_DIR$/web/static/sass/style3.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/style4.scss" afterPath="$PROJECT_DIR$/web/static/sass/style4.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/sass/untitled.html" afterPath="$PROJECT_DIR$/web/static/sass/untitled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controler/controller.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/WEB-INF/classes/example/HelloWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Pknu_Wiki/example/HelloWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/example/HelloWorld.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/main.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/login.jsp" afterPath="$PROJECT_DIR$/web/view/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/main.jsp" afterPath="$PROJECT_DIR$/web/view/main.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -303,31 +31,42 @@
       <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5267">
-              <caret line="229" column="141" lean-forward="false" selection-start-line="229" selection-start-column="126" selection-end-line="229" selection-end-column="141" />
+            <state relative-caret-position="115">
+              <caret line="250" column="22" lean-forward="true" selection-start-line="250" selection-start-column="22" selection-end-line="250" selection-end-column="22" />
               <folding>
-                <marker date="1510677962410" expanded="false" signature="22853:22873" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="22901:22921" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="22949:22969" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="23079:23099" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="23127:23147" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="23175:23195" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="23305:23325" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="23353:23373" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="23401:23421" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="23531:23551" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="23579:23599" ph="..." />
-                <marker date="1510677962410" expanded="false" signature="23627:23647" ph="..." />
+                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1510739187409" expanded="false" signature="22836:22856" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="22884:22904" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="22932:22952" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="23062:23082" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="23110:23130" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="23158:23178" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="23288:23308" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="23336:23356" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="23384:23404" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="23514:23534" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="23562:23582" ph="..." />
+                <marker date="1510739187409" expanded="false" signature="23610:23630" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controler/controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="231" column="32" lean-forward="false" selection-start-line="231" selection-start-column="32" selection-end-line="231" selection-end-column="32" />
+            <state relative-caret-position="397">
+              <caret line="229" column="76" lean-forward="false" selection-start-line="229" selection-start-column="76" selection-end-line="229" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -439,10 +178,12 @@
         <option value="$PROJECT_DIR$/web/css/simple-line-icons.css" />
         <option value="$PROJECT_DIR$/web/js/google_map.js" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/web/view/main.jsp" />
         <option value="$PROJECT_DIR$/web/static/css/style.css" />
-        <option value="$PROJECT_DIR$/web/view/login.jsp" />
         <option value="$PROJECT_DIR$/web/static/js/google_map.js" />
+        <option value="$PROJECT_DIR$/web/view/main.jsp" />
+        <option value="$PROJECT_DIR$/src/controler/controler.java" />
+        <option value="$PROJECT_DIR$/web/view/login.jsp" />
+        <option value="$PROJECT_DIR$/src/controler/controller.java" />
       </list>
     </option>
   </component>
@@ -459,7 +200,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
@@ -499,39 +240,12 @@
               <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="controler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
@@ -750,15 +464,15 @@
       <workItem from="1510675552939" duration="649000" />
       <workItem from="1510676253406" duration="4156000" />
       <workItem from="1510731308645" duration="571000" />
-      <workItem from="1510737458674" duration="226000" />
+      <workItem from="1510737458674" duration="2425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32976000" />
+    <option name="totallyTimeSpent" value="35175000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -771,13 +485,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31346577" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20520833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20520833" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20520833" sideWeight="0.5065789" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -838,14 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/static/js/google_map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10994">
@@ -874,18 +580,19 @@
         <state relative-caret-position="10580">
           <caret line="460" column="30" lean-forward="true" selection-start-line="460" selection-start-column="30" selection-end-line="460" selection-end-column="30" />
           <folding>
-            <marker date="1510677962410" expanded="false" signature="22853:22873" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22901:22921" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22949:22969" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23079:23099" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23127:23147" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23175:23195" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23305:23325" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23353:23373" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23401:23421" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23531:23551" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23579:23599" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23627:23647" ph="..." />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510739187409" expanded="false" signature="22836:22856" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22884:22904" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22932:22952" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23062:23082" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23110:23130" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23158:23178" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23288:23308" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23336:23356" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23384:23404" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23514:23534" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23562:23582" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23610:23630" ph="..." />
           </folding>
         </state>
       </provider>
@@ -903,18 +610,19 @@
         <state relative-caret-position="5980">
           <caret line="260" column="38" lean-forward="true" selection-start-line="260" selection-start-column="38" selection-end-line="260" selection-end-column="38" />
           <folding>
-            <marker date="1510677962410" expanded="false" signature="22853:22873" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22901:22921" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22949:22969" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23079:23099" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23127:23147" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23175:23195" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23305:23325" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23353:23373" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23401:23421" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23531:23551" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23579:23599" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23627:23647" ph="..." />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510739187409" expanded="false" signature="22836:22856" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22884:22904" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22932:22952" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23062:23082" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23110:23130" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23158:23178" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23288:23308" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23336:23356" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23384:23404" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23514:23534" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23562:23582" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23610:23630" ph="..." />
           </folding>
         </state>
       </provider>
@@ -976,18 +684,19 @@
         <state relative-caret-position="1656">
           <caret line="72" column="53" lean-forward="false" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
           <folding>
-            <marker date="1510677962410" expanded="false" signature="22853:22873" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22901:22921" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22949:22969" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23079:23099" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23127:23147" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23175:23195" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23305:23325" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23353:23373" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23401:23421" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23531:23551" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23579:23599" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23627:23647" ph="..." />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510739187409" expanded="false" signature="22836:22856" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22884:22904" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22932:22952" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23062:23082" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23110:23130" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23158:23178" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23288:23308" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23336:23356" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23384:23404" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23514:23534" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23562:23582" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23610:23630" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1026,18 +735,19 @@
         <state relative-caret-position="1656">
           <caret line="72" column="53" lean-forward="false" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
           <folding>
-            <marker date="1510677962410" expanded="false" signature="22853:22873" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22901:22921" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22949:22969" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23079:23099" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23127:23147" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23175:23195" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23305:23325" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23353:23373" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23401:23421" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23531:23551" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23579:23599" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23627:23647" ph="..." />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510739187409" expanded="false" signature="22836:22856" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22884:22904" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22932:22952" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23062:23082" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23110:23130" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23158:23178" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23288:23308" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23336:23356" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23384:23404" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23514:23534" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23562:23582" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23610:23630" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1202,27 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5267">
-          <caret line="229" column="141" lean-forward="false" selection-start-line="229" selection-start-column="126" selection-end-line="229" selection-end-column="141" />
-          <folding>
-            <marker date="1510677962410" expanded="false" signature="22853:22873" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22901:22921" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="22949:22969" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23079:23099" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23127:23147" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23175:23195" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23305:23325" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23353:23373" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23401:23421" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23531:23551" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23579:23599" ph="..." />
-            <marker date="1510677962410" expanded="false" signature="23627:23647" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/static/js/google_map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1231,10 +920,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="250" column="22" lean-forward="true" selection-start-line="250" selection-start-column="22" selection-end-line="250" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510739187409" expanded="false" signature="22836:22856" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22884:22904" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="22932:22952" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23062:23082" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23110:23130" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23158:23178" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23288:23308" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23336:23356" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23384:23404" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23514:23534" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23562:23582" ph="..." />
+            <marker date="1510739187409" expanded="false" signature="23610:23630" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="231" column="32" lean-forward="false" selection-start-line="231" selection-start-column="32" selection-end-line="231" selection-end-column="32" />
+        <state relative-caret-position="397">
+          <caret line="229" column="76" lean-forward="false" selection-start-line="229" selection-start-column="76" selection-end-line="229" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controler/controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
