@@ -265,9 +265,6 @@
 </footer>
 
 
-
-
-
 <!-- jQuery -->
 <script src="../static/js/jquery.min.js?ver=1"></script>
 <!-- jQuery Easing -->

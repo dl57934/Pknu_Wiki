@@ -22,11 +22,17 @@ public class controller extends HttpServlet {
        String action = request.getParameter("action");
        switch (action) {
            case "login":
+               login(request, response);
                break;
            case "signIn":
                break;
        }
     }
+    private void login(HttpServletRequest request, HttpServletResponse response){
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
 
+        System.out.println("email: "+email+", password: "+password);
+    }
 
 }
