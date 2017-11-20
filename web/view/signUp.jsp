@@ -225,7 +225,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="to-animate title" >PKNU WIKI 회원가입</h1>
                         <div class="main">
-                                    <form  method="post" action="/controller?action=signUp"  style="display: inline">
+                                    <form  method="post"  class="form-horizontal" action="/controller?action=signUp"  style="display: inline">
                                         <br>
                                         <br>
                                         <div class="form-group">

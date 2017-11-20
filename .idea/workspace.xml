@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a399034-e573-4914-80c8-e8e8b3ef19b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/view/signUp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/WEB-INF/classes/controler/controller.class" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/WEB-INF/classes/controler/controller.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/static/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/main.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controler/controller.java" afterPath="$PROJECT_DIR$/src/controler/controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/main.jsp" afterPath="$PROJECT_DIR$/web/view/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/signUp.jsp" afterPath="$PROJECT_DIR$/web/view/signUp.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,8 +68,8 @@
       <file leaf-file-name="signUp.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/view/signUp.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="235" column="132" lean-forward="false" selection-start-line="235" selection-start-column="132" selection-end-line="235" selection-end-column="132" />
+            <state relative-caret-position="132">
+              <caret line="239" column="99" lean-forward="false" selection-start-line="239" selection-start-column="79" selection-end-line="239" selection-end-column="99" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -506,7 +500,7 @@
       <workItem from="1510796984745" duration="1326000" />
       <workItem from="1510811576716" duration="39000" />
       <workItem from="1511163483978" duration="16000" />
-      <workItem from="1511197131765" duration="8790000" />
+      <workItem from="1511197131765" duration="9399000" />
     </task>
     <task id="LOCAL-00001" summary="컨트롤러 생성">
       <created>1510739915409</created>
@@ -522,11 +516,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510793735393</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="회원가입 페이지 완성">
+      <created>1511205968519</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511205968519</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47520000" />
+    <option name="totallyTimeSpent" value="48129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -631,7 +632,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="컨트롤러 생성" />
     <MESSAGE value="로그인 작성중" />
-    <option name="LAST_COMMIT_MESSAGE" value="로그인 작성중" />
+    <MESSAGE value="회원가입 페이지 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value="회원가입 페이지 완성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1018,8 +1020,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/view/signUp.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="235" column="132" lean-forward="false" selection-start-line="235" selection-start-column="132" selection-end-line="235" selection-end-column="132" />
+        <state relative-caret-position="132">
+          <caret line="239" column="99" lean-forward="false" selection-start-line="239" selection-start-column="79" selection-end-line="239" selection-end-column="99" />
           <folding>
             <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
