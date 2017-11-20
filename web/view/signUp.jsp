@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: dl579
-  Date: 2017-11-15
-  Time: 오전 1:43
+  Date: 2017-11-21
+  Time: 오전 1:59
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
@@ -178,10 +178,8 @@
             top: 2px;
             position: relative;
         }
-        .option-toggle:hover, .option-toggle:focus, .option-toggle:active {
-            color:  #fff;
-            text-decoration: none;
-            outline: none;
+        .main{
+            text-align: center;
         }
     </style>
     <!-- End demo purposes only -->
@@ -225,25 +223,37 @@
             <div class="text-inner">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <div style="padding-bottom: 180px">
-                        <h1 class="to-animate">PKNU WIKI 로그인</h1>
-                        <form method="post" action="/controller?action=login">
-                            <br>
-                            <br>
-                        <div>
-                            <span>Id: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="email" name="email"></span>
+                        <h1 class="to-animate title" >PKNU WIKI 회원가입</h1>
+                        <div class="main">
+                                    <form  method="post" action="/controller?action=signUp"  style="display: inline">
+                                        <br>
+                                        <br>
+                                        <div class="form-group">
+                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" placeholder="이름"></span>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <span style="font-family: 'a옛날사진관2'">아이디: <input type="text" name="id" placeholder="아이디"></span>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <span style="font-family: 'a옛날사진관2';padding-left: 110px" > 학번: <input type="text" name="schoolNumber" placeholder="학번">&nbsp<input class="btn-primary btn" type="submit" value="학번 인증"></span>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <span style="font-family: 'a옛날사진관2'">비밀번호: <input class="" type="password" name="password" placeholder="비밀번호"></span>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <span style="font-family: 'a옛날사진관2'">비밀번호 확인: <input type="password" name="password_check" placeholder="비밀번호 확인"></span>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div>
+                                            <span> <input class="btn btn-primary" type="submit" value="회원가입"></span>
+                                        </div>
+                                    </form>
                         </div>
-                            <br>
-                        <div>
-                            <span>password: &nbsp &nbsp<input type="password" name="password"></span>
-                        </div>
-                            <br>
-                            <br>
-                            <div>
-                        <span> <input class="btn btn-primary" type="submit" value="Login">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="#" target="_blank">아이디가 없으신가요?</a></span>
-                        </div>
-                        </form>
-                        </div >
                     </div>
                 </div>
             </div>
@@ -295,3 +305,4 @@
 
 </body>
 </html>
+

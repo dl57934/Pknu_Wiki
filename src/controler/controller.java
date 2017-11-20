@@ -24,7 +24,7 @@ public class controller extends HttpServlet {
            case "login":
                login(request, response);
                break;
-           case "signIn":
+           case "signUp":
                break;
        }
     }

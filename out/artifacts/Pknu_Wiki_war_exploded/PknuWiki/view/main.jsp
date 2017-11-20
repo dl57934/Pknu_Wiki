@@ -266,7 +266,7 @@
 						<i class="fh5co-intro-icon icon-user-plus"></i>
 						<h2>회원 가입</h2>
 						<p>회원가입을 하시면 글 작성 수정 등을 할 수 있습니다.</p>
-						<p><a href="#" class="btn btn-primary">회원가입</a></p>
+						<p><a href="signUp.jsp" class="btn btn-primary">회원가입</a></p>
 					</div>
 				</div>
 			</div>
