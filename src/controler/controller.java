@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name = "controler" ,urlPatterns = {"/controller"})
+@WebServlet(name = "controller" ,urlPatterns = {"/controller"})
 public class controller extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -33,6 +33,9 @@ public class controller extends HttpServlet {
                break;
            case "signUp":
                SignUp(request,response);
+               break;
+           case "logOut":
+               logOut(request,response);
                break;
        }
     }
@@ -75,7 +78,18 @@ public class controller extends HttpServlet {
             }
         }else{
             response.sendRedirect("PknuWiki/view/signUp.jsp");
+             }
         }
-    }
- }
+     }
+     public void logOut(HttpServletRequest request, HttpServletResponse response){
+        System.out.println(request.getParameter("action"));
+        HttpSession session = request.getSession();
+        session.setAttribute("loginCheck",false);
+        session.setAttribute("id","");
+         try {
+             response.sendRedirect("PknuWiki/view/main.jsp");
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
+     }
 }

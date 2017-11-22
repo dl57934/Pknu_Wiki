@@ -249,7 +249,7 @@
                             <br>
                             <br>
                             <div>
-                        <span> <input class="btn btn-primary" type="submit" value="Login">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="#" target="_blank">아이디가 없으신가요?</a></span>
+                        <span> <input class="btn btn-primary" type="submit" value="Login">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="signUp.jsp" target="_blank">아이디가 없으신가요?</a></span>
                         </div>
                         </form>
                         </div >
