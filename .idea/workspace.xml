@@ -6,23 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a399034-e573-4914-80c8-e8e8b3ef19b2" name="Default" comment="회원가입 페이지 완성">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DAO/memberDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DTO/memberDTO.java" />
+    <list default="true" id="9a399034-e573-4914-80c8-e8e8b3ef19b2" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/axis.jar" afterPath="$PROJECT_DIR$/lib/axis.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/commons-discovery-0.2.jar" afterPath="$PROJECT_DIR$/lib/commons-discovery-0.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/commons-logging-1.0.4.jar" afterPath="$PROJECT_DIR$/lib/commons-logging-1.0.4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/jaxrpc.jar" afterPath="$PROJECT_DIR$/lib/jaxrpc.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/log4j-1.2.8.jar" afterPath="$PROJECT_DIR$/lib/log4j-1.2.8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/saaj.jar" afterPath="$PROJECT_DIR$/lib/saaj.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/wsdl4j-1.5.1.jar" afterPath="$PROJECT_DIR$/lib/wsdl4j-1.5.1.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/WEB-INF/classes/controler/controller.class" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/WEB-INF/classes/controler/controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Pknu_Wiki_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Pknu_Wiki_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controler/controller.java" afterPath="$PROJECT_DIR$/src/controler/controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/login.jsp" afterPath="$PROJECT_DIR$/web/view/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/signUp.jsp" afterPath="$PROJECT_DIR$/web/view/signUp.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3174">
-              <caret line="58" column="42" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+            <state relative-caret-position="460">
+              <caret line="213" column="92" lean-forward="true" selection-start-line="213" selection-start-column="92" selection-end-line="213" selection-end-column="92" />
               <folding>
                 <marker date="1511197808775" expanded="false" signature="22845:22865" ph="..." />
                 <marker date="1511197808775" expanded="false" signature="22893:22913" ph="..." />
@@ -57,10 +44,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Pknu_Wiki.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pknu_Wiki.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controler/controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
+            <state relative-caret-position="372">
               <caret line="72" column="18" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,17 +69,17 @@
       <file leaf-file-name="memberDTO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DTO/memberDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="127">
               <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="memberDAO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="memberDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DAO/memberDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="-57">
               <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -104,6 +101,16 @@
                 <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#span#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,16 +140,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style4.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/static/css/style4.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -274,29 +271,6 @@
               <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DAO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DTO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -586,7 +560,7 @@
       <workItem from="1511224839596" duration="802000" />
       <workItem from="1511278729859" duration="12581000" />
       <workItem from="1511357533536" duration="832000" />
-      <workItem from="1511361249596" duration="4546000" />
+      <workItem from="1511361249596" duration="4664000" />
     </task>
     <task id="LOCAL-00001" summary="컨트롤러 생성">
       <created>1510739915409</created>
@@ -616,11 +590,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511206549610</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="로그인 회원가입 백으로 성공">
+      <created>1511365919723</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1511365919723</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67003000" />
+    <option name="totallyTimeSpent" value="67121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -726,7 +707,8 @@
     <MESSAGE value="컨트롤러 생성" />
     <MESSAGE value="로그인 작성중" />
     <MESSAGE value="회원가입 페이지 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="회원가입 페이지 완성" />
+    <MESSAGE value="로그인 회원가입 백으로 성공" />
+    <option name="LAST_COMMIT_MESSAGE" value="로그인 회원가입 백으로 성공" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -743,13 +725,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/static/sass/blue.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3013">
-          <caret line="131" column="5" lean-forward="false" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1004,6 +979,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/DAO.java" />
     <entry file="file://$PROJECT_DIR$/src/model/DTO.java" />
+    <entry file="file://$PROJECT_DIR$/Pknu_Wiki.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -1012,34 +995,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DTO/memberDTO.java">
+    <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controler/controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="72" column="18" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+        <state relative-caret-position="460">
+          <caret line="213" column="92" lean-forward="true" selection-start-line="213" selection-start-column="92" selection-end-line="213" selection-end-column="92" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/memberDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1511365728558" expanded="true" signature="804:842" ph="select * fro... member" />
-            <marker date="1511365728558" expanded="true" signature="1209:1264" ph="select * fro... member" />
-            <marker date="1511365728558" expanded="true" signature="1641:1668" ph="insert into member... " />
-            <marker date="1511365728558" expanded="true" signature="1641:1751" ph="insert into member... " />
+            <marker date="1511197808775" expanded="false" signature="22845:22865" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="22893:22913" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="22941:22961" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="23071:23091" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="23119:23139" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="23167:23187" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="23297:23317" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="23345:23365" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="23393:23413" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="23523:23543" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="23571:23591" ph="..." />
+            <marker date="1511197808775" expanded="false" signature="23619:23639" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1063,23 +1035,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
+    <entry file="file://$PROJECT_DIR$/src/controler/controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3174">
-          <caret line="58" column="42" lean-forward="false" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+        <state relative-caret-position="372">
+          <caret line="72" column="18" lean-forward="false" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
           <folding>
-            <marker date="1511197808775" expanded="false" signature="22845:22865" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="22893:22913" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="22941:22961" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="23071:23091" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="23119:23139" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="23167:23187" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="23297:23317" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="23345:23365" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="23393:23413" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="23523:23543" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="23571:23591" ph="..." />
-            <marker date="1511197808775" expanded="false" signature="23619:23639" ph="..." />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DTO/memberDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/memberDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1511365728558" expanded="true" signature="804:842" ph="select * fro... member" />
+            <marker date="1511365728558" expanded="true" signature="1209:1264" ph="select * fro... member" />
+            <marker date="1511365728558" expanded="true" signature="1641:1668" ph="insert into member... " />
+            <marker date="1511365728558" expanded="true" signature="1641:1751" ph="insert into member... " />
           </folding>
         </state>
       </provider>
