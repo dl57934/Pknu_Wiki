@@ -5,7 +5,8 @@
   Time: 오전 1:59
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -108,7 +109,7 @@
             margin-left: -140px;
         }
         #colour-variations h3 {
-            text-align: center;;
+            text-align: center;
             font-size: 11px;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -167,7 +168,6 @@
             text-align: center;
             border-top-right-radius: 4px;
             border-bottom-right-radius: 4px;
-            color: #fff;
             cursor: pointer;
             -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
             -moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
@@ -229,23 +229,23 @@
                                         <br>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" placeholder="이름"></span>
+                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" placeholder="이름" style="color: #0b0b0b"></span>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">아이디: <input type="text" name="id" placeholder="아이디"></span>
+                                            <span style="font-family: 'a옛날사진관2'">아이디: <input type="text" name="id" placeholder="아이디" style="color: #0b0b0b"></span>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2';padding-left: 110px" > 학번: <input type="text" name="schoolNumber" placeholder="학번">&nbsp<input class="btn-primary btn" type="submit" value="학번 인증"></span>
+                                            <span style="font-family: 'a옛날사진관2';padding-left: 110px" > 학번: <input type="text" name="schoolNumber" placeholder="학번" style="color: #0b0b0b">&nbsp<input class="btn-primary btn" type="submit" value="학번 인증"></span>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">비밀번호: <input class="" type="password" name="password" placeholder="비밀번호"></span>
+                                            <span style="font-family: 'a옛날사진관2'">비밀번호: <input class="" type="password" name="password" placeholder="비밀번호" style="color: #0b0b0b"></span>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">비밀번호 확인: <input type="password" name="password_check" placeholder="비밀번호 확인"></span>
+                                            <span style="font-family: 'a옛날사진관2'">비밀번호 확인: <input type="password" name="passwordCheck" placeholder="비밀번호 확인" style="color: #0b0b0b"></span>
                                         </div>
                                         <br>
                                         <br>

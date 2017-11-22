@@ -193,7 +193,16 @@
     <!--[if lt IE 9]>
     <script src="../static/js/respond.min.js?ver=1"></script>
     <![endif]-->
-
+<script type="text/javascript">
+   $(function () {
+        if (<%session.getAttribute("loginCheck");%>){
+            alert("로그인 성공");
+        } else{
+            alert("아이디 혹은 비밀번호가 일치하지 않습니다.");
+    }
+        }
+    )
+</script>
 
 </head>
 <body>
@@ -231,11 +240,11 @@
                             <br>
                             <br>
                         <div>
-                            <span>Id: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="email" name="email"></span>
+                            <span>Id: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="id" style="color: #0b0b0b"></span>
                         </div>
                             <br>
                         <div>
-                            <span>password: &nbsp &nbsp<input type="password" name="password"></span>
+                            <span>password: &nbsp &nbsp<input type="password" name="password" style="color: #0b0b0b"></span>
                         </div>
                             <br>
                             <br>
