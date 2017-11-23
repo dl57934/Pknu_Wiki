@@ -84,7 +84,7 @@ public class controller extends HttpServlet {
      public void logOut(HttpServletRequest request, HttpServletResponse response){
         System.out.println(request.getParameter("action"));
         HttpSession session = request.getSession();
-        session.setAttribute("loginCheck",false);
+        session.setAttribute("loginCheck",null);
         session.setAttribute("id","");
          try {
              response.sendRedirect("PknuWiki/view/main.jsp");

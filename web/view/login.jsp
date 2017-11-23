@@ -19,6 +19,11 @@
     <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
     <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
     <meta name="author" content="FREEHTML5.CO" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.min.css">
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
     <!--
       //////////////////////////////////////////////////////
@@ -153,8 +158,6 @@
             zoom: 1;
             *display: inline;
         }
-
-
         .option-toggle {
             position: absolute;
             right: 0;
@@ -193,17 +196,6 @@
     <!--[if lt IE 9]>
     <script src="../static/js/respond.min.js?ver=1"></script>
     <![endif]-->
-<script type="text/javascript">
-   $(function () {
-        if (<%session.getAttribute("loginCheck");%>){
-            alert("로그인 성공");
-        } else{
-            alert("아이디 혹은 비밀번호가 일치하지 않습니다.");
-    }
-        }
-    )
-</script>
-
 </head>
 <body>
 <header role="banner" id="fh5co-header">
@@ -239,6 +231,17 @@
                         <form method="post" action="/controller?action=login">
                             <br>
                             <br>
+                            <%if(session.getAttribute("loginCheck") != null){
+                                    if((Boolean)session.getAttribute("loginCheck")==false){
+                            %>
+                            <script type="text/javascript">swal(
+                                '로그인 실패',
+                                '아이디 혹은 비밀번호가 다릅니다.',
+                                'error'
+                            )</script>
+                            <%
+                                   session.setAttribute("loginCheck",null); }
+                            }%>
                         <div class="form-group">
                             <span>Id: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="id" style="color: #0b0b0b"></span>
                         </div>

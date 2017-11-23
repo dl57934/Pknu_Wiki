@@ -1,3 +1,5 @@
+<%@ page import="java.util.Enumeration" %>
+<%@ page import="com.sun.org.apache.xpath.internal.operations.Bool" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -12,7 +14,6 @@
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
-
   <!--
 	//////////////////////////////////////////////////////
 
@@ -37,7 +38,11 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.all.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.min.css">
+		<!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -210,7 +215,6 @@
 		            <li><a href="#" data-nav-section="work"><span>Work</span></a></li>
 		          	<li><a href="#" data-nav-section="Guide"><span>Guide</span></a></li>
 		            <li><a href="#" data-nav-section="newObject"><span>newObject</span></a></li>
-		            <%--<li><a href="#" data-nav-section="about"><span>About</span></a></li>--%>
 		            <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
 		          </ul>
 		        </div>
@@ -218,7 +222,6 @@
 			  <!-- </div> -->
 		  </div>
 	</header>
-
 	<section id="fh5co-home" data-section="home" style="background-image: url(../static/images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
 		<div class="container">
@@ -254,9 +257,24 @@
 					<div class="overlay"></div>
 					<div class="fh5co-text">
 						<i class="fh5co-intro-icon icon-login"></i>
+						<%if(session.getAttribute("loginCheck") == null){%>
 						<h2>로그인</h2>
-
+						<p><a href="login.jsp" class="btn btn-primary">로그인</a></p><%} else{
+					%><%
+						if((Boolean) session.getAttribute("loginCheck") == true){%>
+						<script type="text/javascript">swal(
+                            'Good job!',
+                            'Compete Login',
+                            'success'
+                        )</script>
+						<h2>로그아웃</h2>
+						<p><a href="/controller?action=logOut" class="btn btn-primary">로그아웃</a></p>
+							<%} else{%>
+						<h2>로그인</h2>
 						<p><a href="login.jsp" class="btn btn-primary">로그인</a></p>
+							<%}
+						}%>
+
 					</div>
 				</div>
 				<div class="fh5co-block to-animate" style="background-image: url(../static/images/img_10.jpg);">
