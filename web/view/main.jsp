@@ -1,5 +1,7 @@
 <%@ page import="java.util.Enumeration" %>
 <%@ page import="com.sun.org.apache.xpath.internal.operations.Bool" %>
+<%@ page import="DAO.memberDAO" %>
+<%@ page import="DAO.webInfoDAO" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -206,8 +208,8 @@
 
 		        </div>
 
-					<form>
-						<input style="margin-left: 20%" type="text"> <input type="submit" class="btn btn-primary" value="찾기">
+					<form method="post" action="/controller?action=search">
+						<input style="margin-left: 20%" name="searchObject"type="text"> <input type="submit" class="btn btn-primary" value="찾기">
 					</form>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
@@ -565,22 +567,27 @@
 			<div class="row" style="padding-left: 20%">
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="fh5co-counter to-animate">
+						<%
+							webInfoDAO dao=new webInfoDAO();
+						%>
 						<i class="fh5co-counter-icon icon-briefcase to-animate-2"></i>
-						<span class="fh5co-counter-number js-counter" data-from="0" data-to="89" data-speed="5000" data-refresh-interval="50">89</span>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to=<%=dao.getwritingPage()%> data-speed="5000" data-refresh-interval="50"><%=dao.getwritingPage()%></span>
 						<span class="fh5co-counter-label">등록된 글 수</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="fh5co-counter to-animate">
 						<i class="fh5co-counter-icon icon-code to-animate-2"></i>
-						<span class="fh5co-counter-number js-counter" data-from="0" data-to="2343409" data-speed="5000" data-refresh-interval="50">2343409</span>
+
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to=<%=dao.getMemberNum()%> data-speed="5000" data-refresh-interval="50"><%=dao.getMemberNum()%></span>
+
 						<span class="fh5co-counter-label">가입된 멤버 수</span>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="fh5co-counter to-animate">
 						<i class="fh5co-counter-icon icon-cup to-animate-2"></i>
-						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1302" data-speed="5000" data-refresh-interval="50">1302</span>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to=<%=dao.discussionNum()%> data-speed="5000" data-refresh-interval="50"><%=dao.discussionNum()%></span>
 						<span class="fh5co-counter-label">토론이 진행된 수</span>
 					</div>
 				</div>

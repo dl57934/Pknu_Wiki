@@ -206,7 +206,7 @@
 
             </div>
 
-            <form>
+            <form method="post" action="/controller?action=search">
                 <input style="margin-left: 20%" type="text"> <input type="submit" class="btn btn-primary" value="찾기">
             </form>
             <div id="navbar" class="navbar-collapse collapse">

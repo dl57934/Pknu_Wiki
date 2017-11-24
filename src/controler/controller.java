@@ -2,6 +2,8 @@ package controler;
 
 import DAO.memberDAO;
 import DTO.memberDTO;
+import com.oreilly.servlet.MultipartRequest;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,7 +39,14 @@ public class controller extends HttpServlet {
            case "logOut":
                logOut(request,response);
                break;
+           case "search":
+               search(request, response);
+               break;
        }
+    }
+    private void search(HttpServletRequest request,HttpServletResponse response){
+
+
     }
     private void login(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
@@ -92,4 +101,5 @@ public class controller extends HttpServlet {
              e.printStackTrace();
          }
      }
+
 }

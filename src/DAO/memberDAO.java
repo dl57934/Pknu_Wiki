@@ -53,18 +53,28 @@ public class memberDAO {
     }
     public boolean signUp(memberDTO dto){
         query = "insert into member values('"+ dto.getId()+"','"+dto.getPw()+"','"+dto.getName()+"','"+dto.getShoolNumber()+"')";
+        String query2 = "select * from webinfo";
+        int memberNum =0;
         int resultNum = 0;
         try{
             resultNum = statement.executeUpdate(query);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
         if (resultNum == 1) {
+            resultSet = statement.executeQuery(query2);
+            while (resultSet.next()){
+                memberNum = resultSet.getInt("member");
+            }
+            memberNum += 1;
+            String query3 = "update webinfo set member ="+memberNum;
+            statement.executeUpdate(query3);
             System.out.println("데이터 베이스에 입력 성공");
             return true;
         }else {
             System.out.println("데이터 베이스에 입력 실패");
             return false;
         }
+            }catch (Exception e){
+            e.printStackTrace();
+        }
+        return false;
     }
 }
