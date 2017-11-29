@@ -190,7 +190,7 @@
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="../static/js/respond.min.js?ver=1"></script>
-    <![endif]-->
+    <![endif]-->)
 
 
 </head>
@@ -237,7 +237,7 @@
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2';padding-left: 110px" > 학번: <input type="text" name="schoolNumber" placeholder="학번" style="color: #0b0b0b">&nbsp<input class="btn-primary btn" type="submit" value="학번 인증"></span>
+                                            <span style="font-family: 'a옛날사진관2';padding-left: 110px" > 학번: <input type="text" name="schoolNumber" placeholder="학번" style="color: #0b0b0b">&nbsp<button id ="sendButton"class="btn-primary btn" >학생 인증</button></span>
                                         </div>
                                         <br>
                                         <div class="form-group">
