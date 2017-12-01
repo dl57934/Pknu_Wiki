@@ -198,9 +198,10 @@
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 					<a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
 				</div>
+					<form method="post" action="/controller?action=search" class="form-inline" >
 
-					<form method="post" action="/controller?action=search">
-						<input style="margin-left: 20%" name="searchObject"type="text" > <input type="submit" class="btn btn-primary" value="찾기">
+						<input rightmargin="0" style="margin-left:52%; background-color: white;width: 300px;height: 40px" type="text" class="form-control">
+						<input type="submit" class="btn btn-primary" value="찾기" >
 					</form>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
@@ -538,7 +539,7 @@
 	</section>
 
 	<section id="fh5co-contact" data-section="contact">
-		<div class="container">
+		<div class="container" style="padding-right: ">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="to-animate">관리자에게 메세지 보내기</h2>
@@ -668,7 +669,7 @@
 	<script src="../static/js/jquery.magnific-popup.min.js?ver=1"></script>
 	<script src="../static/js/magnific-popup-options.js?ver=1"></script>
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false?ver=1"></script>
 	<script src="../static/js/google_map.js?ver=1"></script>
 
 

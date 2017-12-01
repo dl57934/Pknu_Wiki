@@ -202,9 +202,10 @@
                 <a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
 
             </div>
+            <form method="post" action="/controller?action=search" class="form-inline" >
 
-            <form method="post" action="/controller?action=search">
-                <input style="margin-left: 20%" type="text"> <input type="submit" class="btn btn-primary" value="찾기">
+                <input rightmargin="0" style="margin-left:52%; background-color: white;width: 300px;height: 40px" type="text" class="form-control">
+                <input type="submit" class="btn btn-primary" value="찾기" >
             </form>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right"></ul>

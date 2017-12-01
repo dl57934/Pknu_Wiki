@@ -11,7 +11,7 @@ function init() {
     var Busan = {lat:35.1338110,lng:129.1037240};
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 10,
+        zoom: 5,
 
         // The latitude and longitude to center the map (always required)
         center: Busan,
