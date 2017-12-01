@@ -226,7 +226,7 @@
                                         <br>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" placeholder="이름" style="color: #0b0b0b"></span>
+                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" placeholder="이름" style="color: #0b0b0b; size: "></span>
                                         </div>
                                         <br>
                                         <div class="form-group">

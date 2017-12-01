@@ -538,7 +538,7 @@
 	</section>
 
 	<section id="fh5co-contact" data-section="contact">
-		<div class="container">
+		<div class="container" style="padding-right: ">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="to-animate">관리자에게 메세지 보내기</h2>
