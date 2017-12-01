@@ -12,23 +12,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>PKNU WIKI</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
-  <!--
-	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE
-	DESIGNED & DEVELOPED by FREEHTML5.CO
 
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
-
-	//////////////////////////////////////////////////////
-	 -->
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -194,7 +179,14 @@
         <script src="../static/js/respond.min.js?ver=1"></script>
         <![endif]-->
 
+<style>
+	#navbar{
 
+	}
+	.navbar{
+
+	}
+</style>
 	</head>
 	<body>
 	<header role="banner" id="fh5co-header">
@@ -202,14 +194,13 @@
 				<!-- <div class="row"> -->
 			    <nav class="navbar navbar-default">
 		        <div class="navbar-header">
-		        	<!-- Mobile Toggle Menu Button -->
+					<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		         <a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
-
-		        </div>
+					<a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
+				</div>
 
 					<form method="post" action="/controller?action=search">
-						<input style="margin-left: 20%" name="searchObject"type="text"> <input type="submit" class="btn btn-primary" value="찾기">
+						<input style="margin-left: 20%" name="searchObject"type="text" > <input type="submit" class="btn btn-primary" value="찾기">
 					</form>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
@@ -231,6 +222,7 @@
 				<div class="text-inner">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
+							<img src="../static/images/whale.png" width="30%" height="30%" >
 							<h1 class="to-animate">PKNU WIKI</h1>
 							<h2 class="to-animate">우리가 만들어가는 부경대학교 <br><a href="http://localhost:3000/PknuWiki/view/main.jsp" target="_blank">글작성하러 가기</a></h2>
 						</div>
@@ -298,63 +290,6 @@
 	</section>
 
 
-	<!--
-	<section id="fh5co-testimonials" data-section="testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Testimonials</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="box-testimony">
-						<blockquote class="to-animate-2">
-							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-						</blockquote>
-						<div class="author to-animate">
-							<figure><img src="../images/person1.jpg" alt="Person"></figure>
-							<p>
-							Jean Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="box-testimony">
-						<blockquote class="to-animate-2">
-							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
-						</blockquote>
-						<div class="author to-animate">
-							<figure><img src="../images/person2.jpg" alt="Person"></figure>
-							<p>
-							John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="box-testimony">
-						<blockquote class="to-animate-2">
-							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;</p>
-						</blockquote>
-						<div class="author to-animate">
-							<figure><img src="../images/person3.jpg" alt="Person"></figure>
-							<p>
-							Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 	<section id="fh5co-services" data-section="work">
 		<div class="container">
 			<div class="row">
@@ -733,7 +668,7 @@
 	<script src="../static/js/jquery.magnific-popup.min.js?ver=1"></script>
 	<script src="../static/js/magnific-popup-options.js?ver=1"></script>
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false?ver=1"></script>
 	<script src="../static/js/google_map.js?ver=1"></script>
 
 

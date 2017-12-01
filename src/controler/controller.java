@@ -2,6 +2,7 @@ package controler;
 
 import DAO.memberDAO;
 import DTO.memberDTO;
+import DTO.writingDTO;
 import com.oreilly.servlet.MultipartRequest;
 
 import javax.servlet.ServletException;
@@ -42,6 +43,9 @@ public class controller extends HttpServlet {
            case "search":
                search(request, response);
                break;
+           case"writing":
+                writing(request,response);
+                break;
        }
     }
     private void search(HttpServletRequest request,HttpServletResponse response){
@@ -100,6 +104,17 @@ public class controller extends HttpServlet {
          } catch (IOException e) {
              e.printStackTrace();
          }
+     }
+     public void writing(HttpServletRequest request, HttpServletResponse response){
+         HttpSession session = request.getSession();
+         System.out.println(request.getParameter("action"));
+         System.out.println(request.getParameter("title"));
+         System.out.println(request.getParameter("body"));
+         String title = request.getParameter("title");
+         String body = request.getParameter("body");
+         String writer = request.getParameter((String)session.getAttribute("id"));
+         writingDTO dto = new writingDTO(title, body, writer);
+
      }
 
 }
