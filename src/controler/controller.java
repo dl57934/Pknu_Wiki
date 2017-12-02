@@ -4,8 +4,9 @@ import DAO.memberDAO;
 import DAO.writingDAO;
 import DTO.memberDTO;
 import DTO.writingDTO;
-import com.oreilly.servlet.MultipartRequest;
+import com.github.rjeschke.txtmark.*;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+
 
 @WebServlet(name = "controller" ,urlPatterns = {"/controller"})
 public class controller extends HttpServlet {
@@ -107,19 +111,33 @@ public class controller extends HttpServlet {
              e.printStackTrace();
          }
      }
-     public void writing(HttpServletRequest request, HttpServletResponse response){
+     public void writing(HttpServletRequest request, HttpServletResponse response) throws IOException {
          HttpSession session = request.getSession();
          System.out.println(request.getParameter("action"));
          System.out.println(request.getParameter("title"));
          System.out.println(request.getParameter("body"));
-         String title = request.getParameter("title");
+         String title = "#"+request.getParameter("title");
          String body = request.getParameter("body");
          String writer = (String)session.getAttribute("id");
+         String html = Processor.process(title+"\r\n"+body);
+         System.out.println(html);
          writingDTO dto = new writingDTO(title, body, writer);
          writingDAO dao = new writingDAO();
-         dao.setWriting(dto);
+         try {
+             if(dao.setWriting(dto) == true){
 
-
+             }else {
+                 response.setContentType("text/html;charset=utf-8");
+                 PrintWriter write = response.getWriter();
+                 write.println("<script type='text/javascript'>");
+                 write.println("alert('이미 존재하는 글입니다.');");
+                 write.println("history.back();");
+                 write.println("</script>");
+                 write.flush();
+             }
+         } catch (SQLException e) {
+             e.printStackTrace();
+         }
      }
 
 }

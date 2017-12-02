@@ -1,4 +1,4 @@
-<%--
+<%@ page import="com.github.rjeschke.txtmark.*" %><%--
   Created by IntelliJ IDEA.
   User: dl579
   Date: 2017-11-15
@@ -10,7 +10,6 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
@@ -206,14 +205,29 @@
     <script src="../static/js/respond.min.js?ver=1"></script>
     <![endif]-->
     <script>
-        <%
+        <%--<%
             if(session.getAttribute("loginCheck") == null){
         %>
         alert("글을 작성하려면 로그인이 필요합니다");
         window.location.href="http://localhost:3000/PknuWiki/view/main.jsp";
         <%}
 
-        %>
+        %>--%>
+
+            function check() {
+                if(document.getElementById("inputEmail3").value == "") {
+                    alert("제목을 입력해주세요");
+                    $("#inputEmail3").focus();
+                    return false;
+                }
+                else if(document.getElementById("inputPassword3").value == ""){
+                    alert("본문을 입력해주세요");
+                    $("#inputPassword3").focus();
+                    return false;
+                } else {
+                    return true;
+                }
+        };
     </script>
 </head>
 <body>
@@ -231,10 +245,14 @@
 
             </div>
 
-            <form method="post" action="/controller?action=search" class="form-inline" >
-
-               <input rightmargin="0" style="margin-left:52%; background-color: white;width: 300px;height: 40px" type="text" class="form-control">
-                <input type="submit" class="btn btn-primary" value="찾기" >
+            <form method="post" action="/controller?action=search"
+                  class="form-inline">
+                <div style="float: right">
+                    <input rightmargin="0"
+                           style="background-color: white; width: 20%; height: 40px"
+                           type="text" class="form-control"> <input type="submit"
+                                                                    class="btn btn-primary" value="찾기">
+                </div>
             </form>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right"></ul>
@@ -254,18 +272,19 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div style="padding-bottom: 180px">
                             <h1>게시글 작성</h1>
-                            <form class="form-horizontal" method="post" action="/controller?action=writing">
+
+                            <form class="form-horizontal" method="post" id="fr" onsubmit="return check()" action="/controller?action=writing">
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputEmail3" style="font-size: 15px" class="col-sm-2 control-label">제목</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" style="background-color: white; width: 700px; " id="inputEmail3" name="title" placeholder="제목을 입력하세요" >
+                                        <input type="text" class="form-control" style="background-color: white; width: 85%; " id="inputEmail3" name="title" placeholder="제목을 입력하세요" >
                                         </span>
                                     </div>
                                 </div>
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputPassword3" class="col-sm-2 control-label" style="font-size: 15px">내용</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" id="inputPassword3" rows="10" style="background-color: white; width: 700px" name="body"></textarea>
+                                        <textarea class="form-control" id="inputPassword3" rows="10" style="background-color: white; width: 85%" name="body"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -273,11 +292,11 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10" align="right" style="margin-right: 100px">
-                                        <button type="submit" class="btn btn-primary">작성완료</button>
-                                        <button type="submit" class="btn btn-primary">미리보기</button>
+                                        <input type="submit" style="margin-right: 15%" id ="complete" class="btn btn-primary"  value="작성완료">  <button type="button" id="preview" class="btn btn-primary">미리보기</button>
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -285,10 +304,11 @@
         </div>
         <div class="slant"></div>
     </div>
+
 </section>
 
 <footer id="footer" role="contentinfo">
-    <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2" style="size: "></i></a>
+    <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
     <div class="container">
         <div class="">
             <div class="col-md-12 text-center">
