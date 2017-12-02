@@ -5,9 +5,9 @@ public class writingDTO {
     String body;
     String writer;
     public writingDTO(String title, String body, String writer){
-        this.title = title;
-        this.body = body;
-        this.writer = writer;
+       setTitle(title);
+       setBody(body);
+       setWriter(writer);
     }
     public String getTitle() {
         return title;

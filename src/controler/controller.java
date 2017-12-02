@@ -1,6 +1,7 @@
 package controler;
 
 import DAO.memberDAO;
+import DAO.writingDAO;
 import DTO.memberDTO;
 import DTO.writingDTO;
 import com.oreilly.servlet.MultipartRequest;
@@ -99,6 +100,7 @@ public class controller extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("loginCheck",null);
         session.setAttribute("id","");
+        session.setAttribute("oneLogin",null);
          try {
              response.sendRedirect("PknuWiki/view/main.jsp");
          } catch (IOException e) {
@@ -112,8 +114,11 @@ public class controller extends HttpServlet {
          System.out.println(request.getParameter("body"));
          String title = request.getParameter("title");
          String body = request.getParameter("body");
-         String writer = request.getParameter((String)session.getAttribute("id"));
+         String writer = (String)session.getAttribute("id");
          writingDTO dto = new writingDTO(title, body, writer);
+         writingDAO dao = new writingDAO();
+         dao.setWriting(dto);
+
 
      }
 

@@ -204,7 +204,7 @@
             </div>
             <form method="post" action="/controller?action=search" class="form-inline" >
 
-                <input rightmargin="0" style="margin-left:52%; background-color: white;width: 300px;height: 40px" type="text" class="form-control">
+                <input rightmargin="0" style="margin-left:34%; background-color: white;width: 30%;height: 20%" type="text" class="form-control">
                 <input type="submit" class="btn btn-primary" value="찾기" >
             </form>
             <div id="navbar" class="navbar-collapse collapse">

@@ -200,7 +200,7 @@
 				</div>
 					<form method="post" action="/controller?action=search" class="form-inline" >
 
-						<input rightmargin="0" style="margin-left:52%; background-color: white;width: 300px;height: 40px" type="text" class="form-control">
+						<input rightmargin="0" style="margin-left:34%; background-color: white;width: 30%;height: 20%" type="text" class="form-control">
 						<input type="submit" class="btn btn-primary" value="찾기" >
 					</form>
 		        <div id="navbar" class="navbar-collapse collapse">
@@ -225,7 +225,7 @@
 						<div class="col-md-8 col-md-offset-2">
 							<img src="../static/images/whale.png" width="30%" height="30%" >
 							<h1 class="to-animate">PKNU WIKI</h1>
-							<h2 class="to-animate">우리가 만들어가는 부경대학교 <br><a href="http://localhost:3000/PknuWiki/view/main.jsp" target="_blank">글작성하러 가기</a></h2>
+							<h2 class="to-animate">우리가 만들어가는 부경대학교 <br><a href="writing.jsp" target="_self">글작성하러 가기</a></h2>
 						</div>
 					</div>
 				</div>
@@ -252,19 +252,24 @@
 					<div class="overlay"></div>
 					<div class="fh5co-text">
 						<i class="fh5co-intro-icon icon-login"></i>
-						<%if(session.getAttribute("loginCheck") == null){%>
+						<%if(session.getAttribute("loginCheck") == null){ %>
 						<h2>로그인</h2>
 						<p><a href="login.jsp" class="btn btn-primary">로그인</a></p><%} else{
 					%><%
-						if((Boolean) session.getAttribute("loginCheck") == true){%>
-						<script type="text/javascript">swal(
-                            'Good job!',
-                            'Compete Login',
-                            'success'
-                        )</script>
+						if((Boolean) session.getAttribute("loginCheck") == true ){%>
+
 						<h2>로그아웃</h2>
 						<p><a href="/controller?action=logOut" class="btn btn-primary">로그아웃</a></p>
-							<%} else{%>
+
+							<%if(session.getAttribute("oneLogin")== null){
+							%><script type="text/javascript">swal(
+                        'Good job!',
+                        'Compete Login',
+                        'success'
+                    )</script>
+						<%session.setAttribute("oneLogin",true);}%>
+						<%
+							} else{%>
 						<h2>로그인</h2>
 						<p><a href="login.jsp" class="btn btn-primary">로그인</a></p>
 							<%}

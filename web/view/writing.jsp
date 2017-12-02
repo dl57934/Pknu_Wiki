@@ -29,21 +29,7 @@
     <script
             src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
-    <!--
-          //////////////////////////////////////////////////////
 
-          FREE HTML5 TEMPLATE
-          DESIGNED & DEVELOPED by FREEHTML5.CO
-
-          Website:       http://freehtml5.co/
-          Email:          info@freehtml5.co
-          Twitter:       http://twitter.com/fh5co
-          Facebook:       https://www.facebook.com/fh5co
-
-          //////////////////////////////////////////////////////
-           -->
-
-    <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="" />
     <meta property="og:image" content="" />
     <meta property="og:url" content="" />
@@ -54,7 +40,6 @@
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
 
     <link
@@ -220,8 +205,19 @@
     <!--[if lt IE 9]>
     <script src="../static/js/respond.min.js?ver=1"></script>
     <![endif]-->
+    <script>
+        <%
+            if(session.getAttribute("loginCheck") == null){
+        %>
+        alert("글을 작성하려면 로그인이 필요합니다");
+        window.location.href="http://localhost:3000/PknuWiki/view/main.jsp";
+        <%}
+
+        %>
+    </script>
 </head>
 <body>
+
 <header role="banner" id="fh5co-header">
     <div class="container">
         <!-- <div class="row"> -->
@@ -258,18 +254,18 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div style="padding-bottom: 180px">
                             <h1>게시글 작성</h1>
-                            <form class="form-horizontal">
+                            <form class="form-horizontal" method="post" action="/controller?action=writing">
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputEmail3" style="font-size: 15px" class="col-sm-2 control-label">제목</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" style="background-color: white; width: 700px; " id="inputEmail3" placeholder="제목을 입력하세요" >
+                                        <input type="text" class="form-control" style="background-color: white; width: 700px; " id="inputEmail3" name="title" placeholder="제목을 입력하세요" >
                                         </span>
                                     </div>
                                 </div>
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputPassword3" class="col-sm-2 control-label" style="font-size: 15px">내용</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" id="inputPassword3" rows="10" style="background-color: white; width: 700px"></textarea>
+                                        <textarea class="form-control" id="inputPassword3" rows="10" style="background-color: white; width: 700px" name="body"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -277,8 +273,8 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10" align="right" style="margin-right: 100px">
-                                        <button type="submit" class="btn btn-default">작성완료</button>
-                                        <button type="submit" class="btn btn-default">미리보기</button>
+                                        <button type="submit" class="btn btn-primary">작성완료</button>
+                                        <button type="submit" class="btn btn-primary">미리보기</button>
                                     </div>
                                 </div>
                             </form>
