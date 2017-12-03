@@ -22,7 +22,7 @@ public class writingDAO {
         }
     }
     public boolean overlapCheck(writingDTO dto) throws SQLException {
-        query = "select * from writinginfo where body ='"+dto.getBody()+"' and title='"+dto.getTitle()+"'";
+        query = "select * from WRITINGINFO2 where body ='"+dto.getBody()+"' and title='"+dto.getTitle()+"'";
         resultSet = statement.executeQuery(query);
         System.out.println("overlap: "+resultSet.next());
         if(!resultSet.next()) {
@@ -36,7 +36,8 @@ public class writingDAO {
     }
     public boolean setWriting(writingDTO dto) throws SQLException {
         if(overlapCheck(dto) == false){
-            query = "insert into writinginfo values('"+ dto.getBody()+"','"+dto.getTitle()+"','"+dto.getWriter()+"')";
+            connection.setAutoCommit(false);
+            query = "insert into WRITINGINFO2 values('"+dto.getBody()+"','"+dto.getTitle()+"','"+dto.getWriter()+"')";
             try {
                 int resultNum = statement.executeUpdate(query);
                 if(resultNum == 1){
@@ -52,5 +53,26 @@ public class writingDAO {
                return false;
         }
         return true;
+    }
+    public String getView(String title, String body){
+        query = "select * from WRITINGINFO2 where body ='"+body+"' and title='"+title+"'";
+        try {
+            System.out.println("getView Body: "+body);
+            System.out.println("getView Title: "+title);
+            resultSet = statement.executeQuery(query);
+            while(resultSet.next()){
+                System.out.println("getView 성공");
+                String viewTitle =  resultSet.getString("title");
+                String viewBody =  resultSet.getString("body");
+                String viewWriter =  resultSet.getString("writer");
+                System.out.println(viewTitle +"\n\r"+ viewBody + "\n\r" + viewWriter);
+                String finalView = viewTitle +"\n\r"+ viewBody + "\n\r" + viewWriter;
+                return finalView;
+            }
+            System.out.println("getView 실패");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+      return "<h1>존재하지 않는 글입니다.</h1>";
     }
 }

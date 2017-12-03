@@ -1,5 +1,8 @@
 package DTO;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 public class memberDTO {
     String id ;
     String pw;
@@ -24,6 +27,11 @@ public class memberDTO {
     }
 
     public void setPw(String pw) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
         this.pw = pw;
     }
 

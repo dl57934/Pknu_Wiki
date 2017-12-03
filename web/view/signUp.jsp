@@ -188,7 +188,26 @@
     <!--[if lt IE 9]>
     <script src="../static/js/respond.min.js?ver=1"></script>
     <![endif]-->)
+    <script>
+        <%--<%
+            if(session.getAttribute("loginCheck") == null){
+        %>
+        alert("글을 작성하려면 로그인이 필요합니다");
+        window.location.href="http://localhost:3000/PknuWiki/view/main.jsp";
+        <%}
 
+        %>--%>
+
+        function check() {
+            if(document.getElementById("id").value == "" || document.getElementById("name").value == "" || document.getElementById("schoolNumber").value == "" || document.getElementById("password").value == "" || document.getElementById("passwordCheck").value == ""  ) {
+                alert("모든 입력칸에 값을 넣어주세요.");
+
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
 
 </head>
 <body>
@@ -223,27 +242,27 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="to-animate title" >PKNU WIKI 회원가입</h1>
                         <div class="main">
-                                    <form  method="post"  class="form-horizontal" action="/controller?action=signUp"  style="display: inline">
+                                    <form  method="post"  class="form-horizontal" action="/controller?action=signUp"  onsubmit="return check()" style="display: inline">
                                         <br>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" placeholder="이름" style="color: #0b0b0b; size: "></span>
+                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" id ="name" placeholder="이름" style="color: #0b0b0b; "></span>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">아이디: <input type="text" name="id" placeholder="아이디" style="color: #0b0b0b"></span>
+                                            <span style="font-family: 'a옛날사진관2'">아이디: <input type="text" name="id" id="id" placeholder="아이디" style="color: #0b0b0b"></span>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2';padding-left: 110px" > 학번: <input type="text" name="schoolNumber" placeholder="학번" style="color: #0b0b0b">&nbsp<button id ="sendButton"class="btn-primary btn" >학생 인증</button></span>
+                                            <span style="font-family: 'a옛날사진관2';padding-left: 110px" > 학번: <input type="text" name="schoolNumber" id="schoolNumber" placeholder="학번" style="color: #0b0b0b">&nbsp<button id ="sendButton"class="btn-primary btn" >학생 인증</button></span>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">비밀번호: <input class="" type="password" name="password" placeholder="비밀번호" style="color: #0b0b0b"></span>
+                                            <span style="font-family: 'a옛날사진관2'">비밀번호: <input class="" type="password" name="password" id="password" placeholder="비밀번호" style="color: #0b0b0b"></span>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">비밀번호 확인: <input type="password" name="passwordCheck" placeholder="비밀번호 확인" style="color: #0b0b0b"></span>
+                                            <span style="font-family: 'a옛날사진관2'">비밀번호 확인: <input type="password" name="passwordCheck" id="passwordCheck"placeholder="비밀번호 확인" style="color: #0b0b0b"></span>
                                         </div>
                                         <br>
                                         <br>

@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URLEncoder;
 import java.sql.SQLException;
 
 
@@ -53,11 +54,11 @@ public class controller extends HttpServlet {
                 break;
        }
     }
-    private void search(HttpServletRequest request,HttpServletResponse response){
+     private void search(HttpServletRequest request,HttpServletResponse response){
 
 
     }
-    private void login(HttpServletRequest request, HttpServletResponse response) throws IOException {
+     private void login(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         memberDAO dao = new memberDAO();
         String id = request.getParameter("id");
@@ -74,7 +75,7 @@ public class controller extends HttpServlet {
             response.sendRedirect("PknuWiki/view/login.jsp");
         }
     }
- private void SignUp(HttpServletRequest request, HttpServletResponse response) throws IOException {
+     private void SignUp(HttpServletRequest request, HttpServletResponse response) throws IOException {
      response.setContentType("text/plain;charset=UTF-8");
     memberDAO dao = new memberDAO();
     String id = request.getParameter("id");
@@ -83,19 +84,31 @@ public class controller extends HttpServlet {
     String pwCheck = request.getParameter("passwordCheck");
     String schoolNumber = request.getParameter("schoolNumber");
      memberDTO dto = new memberDTO(id,pw,name,schoolNumber);
+         response.setContentType("text/html;charset=utf-8");
+         PrintWriter write = response.getWriter();
+         write.println("<script type='text/javascript'>");
     if(dao.isId(id)){
         System.out.println("동일한 아이디 찾음");
-        response.sendRedirect("PknuWiki/view/signUp.jsp");
+        write.println("alert('이미 존재하는 아이디입니다.');");
+        write.println("history.back();");
+        write.println("</script>");
+        write.flush();
     }else{
         if(pw.equals(pwCheck)) {
             if(dao.signUp(dto)) {
                 System.out.println("회원가입 완료");
+                write.println("alert('부경위키에 환영합니다.');");
+                write.println("</script>");
+                write.flush();
                 response.sendRedirect("PknuWiki/view/main.jsp");
             }else{
                 response.sendRedirect("PknuWiki/view/signUp.jsp");
             }
         }else{
-            response.sendRedirect("PknuWiki/view/signUp.jsp");
+            write.println("alert('비밀번호가 일치하지 않습니다.');");
+            write.println("history.back();");
+            write.println("</script>");
+            write.flush();
              }
         }
      }
@@ -119,13 +132,16 @@ public class controller extends HttpServlet {
          String title = "#"+request.getParameter("title");
          String body = request.getParameter("body");
          String writer = (String)session.getAttribute("id");
-         String html = Processor.process(title+"\r\n"+body);
-         System.out.println(html);
-         writingDTO dto = new writingDTO(title, body, writer);
+         String htmlTitle = Processor.process(title);
+         String htmlBody = Processor.process(body);
+         System.out.println(htmlTitle + htmlBody);
+         writingDTO dto = new writingDTO(htmlTitle, htmlBody, writer);
          writingDAO dao = new writingDAO();
          try {
              if(dao.setWriting(dto) == true){
-
+                  title = URLEncoder.encode(htmlTitle, "UTF-8");
+                  body = URLEncoder.encode(htmlBody, "UTF-8");
+                    response.sendRedirect("http://localhost:3000/PknuWiki/view/view.jsp?title="+title+"&body="+body);
              }else {
                  response.setContentType("text/html;charset=utf-8");
                  PrintWriter write = response.getWriter();
