@@ -1,7 +1,10 @@
 package DAO;
 
 import DTO.writingDTO;
+import oracle.jdbc.internal.OracleResultSet;
+import oracle.sql.CLOB;
 
+import java.io.BufferedWriter;
 import java.sql.*;
 
 public class writingDAO {
@@ -22,40 +25,45 @@ public class writingDAO {
         }
     }
     public boolean overlapCheck(writingDTO dto) throws SQLException {
-        query = "select * from WRITINGINFO2 where body ='"+dto.getBody()+"' and title='"+dto.getTitle()+"'";
+        query = "select * from WRITINGINFO2 where  title='"+dto.getTitle()+"'";
         resultSet = statement.executeQuery(query);
         System.out.println("overlap: "+resultSet.next());
-        if(!resultSet.next()) {
-            System.out.println("overlap은 false야");
-            return false;
-        }
-        else {
+        if(resultSet.next()) { //같은 타이틀 값이 있다.
             System.out.println("overlap은 true야");
             return true;
+        }
+        else {
+            System.out.println("overlap은 false야");
+            return false;
         }
     }
     public boolean setWriting(writingDTO dto) throws SQLException {
         if(overlapCheck(dto) == false){
-            connection.setAutoCommit(false);
-            query = "insert into WRITINGINFO2 values('"+dto.getBody()+"','"+dto.getTitle()+"','"+dto.getWriter()+"')";
+            query = "insert into WRITINGINFO2 values('"+"empty_clob()"+"','"+dto.getTitle()+"','"+dto.getWriter()+"')";
+
             try {
-                int resultNum = statement.executeUpdate(query);
-                if(resultNum == 1){
-                    System.out.println("db입력 성공");
-                    return true;
-                } else{
-                    System.out.println("db입력 실패");
+                statement.executeUpdate(query);
+                connection.setAutoCommit(false);
+                resultSet = statement.executeQuery( "select * from writinginfo2 where title = '"+dto.getTitle()+"' for update");
+                if(resultSet.next()){
+                    CLOB cl = ((OracleResultSet)resultSet).getCLOB("body");
+                    BufferedWriter writer = new BufferedWriter(cl.getCharacterOutputStream());
+                    writer.write(dto.getBody().toString());
+                    writer.close();
+                    connection.commit();
+                    connection.setAutoCommit(true);
+                    System.out.println("db에 넣기 성공");
                 }
-            } catch (SQLException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
-        }else{
+           }else{
                return false;
         }
         return true;
     }
     public String getView(String title, String body){
-        query = "select * from WRITINGINFO2 where body ='"+body+"' and title='"+title+"'";
+        query = "select * from WRITINGINFO2 where title='"+title+"'";
         try {
             System.out.println("getView Body: "+body);
             System.out.println("getView Title: "+title);

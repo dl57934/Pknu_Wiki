@@ -215,7 +215,7 @@
                             <%
                                 String title =  request.getParameter("title");
                                 String body =  request.getParameter("body");
-                                System.out.println(title+"\r\n");
+                                System.out.println(title);
                                 System.out.println(body);
                                 writingDAO dao = new writingDAO();
                                out.println(dao.getView(title, body));

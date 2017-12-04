@@ -55,9 +55,14 @@ public class controller extends HttpServlet {
        }
     }
      private void search(HttpServletRequest request,HttpServletResponse response){
-
-
-    }
+        String searchInfo = request.getParameter("searchInfo");
+         try {
+             searchInfo = URLEncoder.encode(searchInfo, "UTF-8");
+             response.sendRedirect("http://localhost:3000/PknuWiki/view/view.jsp?title="+"<h1>"+searchInfo+"<%2Fh1>%0A");
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
+     }
      private void login(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         memberDAO dao = new memberDAO();
@@ -141,7 +146,7 @@ public class controller extends HttpServlet {
              if(dao.setWriting(dto) == true){
                   title = URLEncoder.encode(htmlTitle, "UTF-8");
                   body = URLEncoder.encode(htmlBody, "UTF-8");
-                    response.sendRedirect("http://localhost:3000/PknuWiki/view/view.jsp?title="+title+"&body="+body);
+                    response.sendRedirect("http://localhost:3000/PknuWiki/view/view.jsp?title="+title);
              }else {
                  response.setContentType("text/html;charset=utf-8");
                  PrintWriter write = response.getWriter();
