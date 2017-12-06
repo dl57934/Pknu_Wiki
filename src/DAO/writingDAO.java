@@ -40,8 +40,8 @@ public class writingDAO {
     public boolean setWriting(writingDTO dto) throws SQLException {
         if(overlapCheck(dto) == false){
             query = "insert into WRITINGINFO2 values('"+"empty_clob()"+"','"+dto.getTitle()+"','"+dto.getWriter()+"')";
-
             try {
+                webInfoDAO webInfoDAO = new webInfoDAO();
                 statement.executeUpdate(query);
                 connection.setAutoCommit(false);
                 resultSet = statement.executeQuery( "select * from writinginfo2 where title = '"+dto.getTitle()+"' for update");
@@ -52,6 +52,9 @@ public class writingDAO {
                     writer.close();
                     connection.commit();
                     connection.setAutoCommit(true);
+                    int webPage= webInfoDAO.getwritingPage();
+                    String query3 = "update webinfo set member ="+webPage++;
+                    statement.executeUpdate(query3);
                     System.out.println("db에 넣기 성공");
                 }
             } catch (Exception e) {

@@ -200,7 +200,7 @@
 				</div>
 					<form method="post" action="/controller?action=search" class="form-inline" >
 
-						<input rightmargin="0" style="margin-left:34%; background-color: white;width: 30%;height: 20%" type="text" class="form-control">
+						<input rightmargin="0" style="margin-left:34%; background-color: white;width: 30%;height: 20%" type="text" class="form-control" name="searchInfo">
 						<input type="submit" class="btn btn-primary" value="찾기" >
 					</form>
 		        <div id="navbar" class="navbar-collapse collapse">
@@ -218,7 +218,7 @@
 	</header>
 	<section id="fh5co-home" data-section="home" style="background-image: url(../static/images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
-		<div class="container">
+		<div class="container">F
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">

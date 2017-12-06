@@ -31,12 +31,12 @@ public class webInfoDAO {
         }
         return null;
     }
-    public String getwritingPage(){
+    public Integer getwritingPage(){
         query = "select * from webinfo";
         try {
             resultSet = statement.executeQuery(query);
             while(resultSet.next()) {
-                return resultSet.getString("writingpage");
+                return resultSet.getInt("writingpage");
             }
         } catch (SQLException e) {
             e.printStackTrace();

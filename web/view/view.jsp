@@ -181,21 +181,21 @@
     <![endif]-->
 </head>
 <body>
-<header role="banner" id="fh5co-header">
+<header role="banner" id="fh5co-header" style="background-color: #52d3aa;margin-top:0 ">
     <div class="container">
         <!-- <div class="row"> -->
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <!-- Mobile Toggle Menu Button -->
                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
+                <a class="navbar-brand" href="main.jsp" >PKNU WIKI</a>
 
             </div>
 
             <form method="post" action="/controller?action=search" class="form-inline" >
 
                 <input rightmargin="0" style="margin-left:52%; background-color: white;width: 300px;height: 40px" type="text" class="form-control">
-                <input type="submit" class="btn btn-primary" value="찾기" >
+                <input type="submit" class="btn btn-primary" style="background-color: white; color: #52d3aa" value="찾기" >
             </form>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right"></ul>
@@ -204,30 +204,21 @@
         <!-- </div> -->
     </div>
 </header>
-<section id="fh5co-home" data-section="home" style="background-image: url(../static/images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
-    <div class="gradient"></div>
+<section id="fh5co-about" data-section="Guide">
     <div class="container">
-        <div class="text-wrap">
-            <div class="text-inner">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div style="padding-bottom: 180px" name="main">
-                            <%
-                                String title =  request.getParameter("title");
-                                String body =  request.getParameter("body");
-                                System.out.println(title);
-                                System.out.println(body);
-                                writingDAO dao = new writingDAO();
-                               out.println(dao.getView(title, body));
-                            %>
-                        </div >
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div style="padding-bottom: 180px" name="main">
+            <%
+                String title =  request.getParameter("title");
+                String body =  request.getParameter("body");
+                System.out.println(title);
+                System.out.println(body);
+                writingDAO dao = new writingDAO();
+                out.println(dao.getView(title, body));
+            %>
+        </div >
     </div>
-    <div class="slant"></div>
 </section>
+
 
 <footer id="footer" role="contentinfo">
     <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
