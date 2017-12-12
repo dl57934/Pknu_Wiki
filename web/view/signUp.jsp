@@ -199,9 +199,13 @@
         %>--%>
 
         function check() {
-            if(document.getElementById("id").value == "" || document.getElementById("name").value == "" || document.getElementById("schoolNumber").value == "" || document.getElementById("password").value == "" || document.getElementById("passwordCheck").value == ""  ) {
+            if($("#id").val().length > 6 || $("#password").val().length > 9 ||$("#id").val().length.length < 12 || $("#password").val().length < 12) {
+                alert("아이디와 비밀번호의 길이를 맞추어 주세요");
+                return false;
+            }
+            console.log(document.getElementById("password").value);
+            if( document.form.getElementById("name").value == "" || document.form.getElementById("schoolNumber").value =="" || document.getElementById("passwordCheck").value == ""  ) {
                 alert("모든 입력칸에 값을 넣어주세요.");
-
                 return false;
             }else{
                 return true;
@@ -246,15 +250,15 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="to-animate title" >PKNU WIKI 회원가입</h1>
                         <div class="main">
-                                    <form  method="post"  class="form-horizontal" action="/controller?action=signUp"  onsubmit="return check()" style="display: inline">
+                                    <form  method="post"  class="form-horizontal" action="/controller?action=signUp" name ="form" id="form" onsubmit="return check()" style="display: inline">
                                         <br>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" id ="name" placeholder="이름" style="color: #0b0b0b; "></span>
+                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" id ="name" placeholder="이름" style="color: #0b0b0b; "> </span>
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">아이디: <input type="text" name="id" id="id" placeholder="아이디" style="color: #0b0b0b"></span>
+                                            <span style="font-family: 'a옛날사진관2'">아이디: <input type="text" name="id" id="id" placeholder="아이디" style="color: #0b0b0b">(6자리 이상)</span>
                                         </div>
                                         <br>
                                         <div class="form-group">
@@ -262,7 +266,7 @@
                                         </div>
                                         <br>
                                         <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">비밀번호: <input class="" type="password" name="password" id="password" placeholder="비밀번호" style="color: #0b0b0b"></span>
+                                            <span style="font-family: 'a옛날사진관2'">비밀번호: <input class="" type="password" name="password" id="password" placeholder="비밀번호" style="color: #0b0b0b">(9자리 이상)</span>
                                         </div>
                                         <br>
                                         <div class="form-group">

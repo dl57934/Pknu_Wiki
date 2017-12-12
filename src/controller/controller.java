@@ -1,13 +1,10 @@
-package controler;
+package controller;
 
 import DAO.memberDAO;
 import DAO.writingDAO;
 import DTO.memberDTO;
 import DTO.writingDTO;
-import com.github.rjeschke.txtmark.Processor;
 
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.sql.SQLException;
 
@@ -74,10 +70,24 @@ public class controller extends HttpServlet {
              e.printStackTrace();
          }
      }
-     private void search(HttpServletRequest request,HttpServletResponse response){
+  private void search(HttpServletRequest request,HttpServletResponse response){
         String searchInfo = request.getParameter("searchInfo");
          try {
+
+             writingDTO writingDTO = new writingDTO("#"+searchInfo, "","");
+             System.out.println("searchInfo: "+searchInfo);
              searchInfo = URLEncoder.encode(searchInfo, "UTF-8");
+             writingDAO writingDAO = new writingDAO();
+             try {
+                 if(writingDAO.overlapCheck(writingDTO)){
+                        System.out.println("중복 발견");
+                        response.sendRedirect("PknuWiki/view/overlapView.jsp?title="+searchInfo);
+                 }else{
+                        response.sendRedirect("PknuWiki/view/view.jsp?title="+searchInfo);
+                 }
+             } catch (SQLException e) {
+                 e.printStackTrace();
+             }
          } catch (IOException e) {
              e.printStackTrace();
          }
@@ -113,6 +123,12 @@ public class controller extends HttpServlet {
     if(dao.isId(id)){
         System.out.println("동일한 아이디 찾음");
         write.println("alert('이미 존재하는 아이디입니다.');");
+        write.println("history.back();");
+        write.println("</script>");
+        write.flush();
+        write.close();
+    }else if(dao.isSchoolNumber(schoolNumber)){
+        write.println("alert('이미 존재하는 학번입니다.');");
         write.println("history.back();");
         write.println("</script>");
         write.flush();

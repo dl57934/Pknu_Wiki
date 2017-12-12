@@ -216,7 +216,7 @@
                 String title =  request.getParameter("title");
                 System.out.println(title);
                 writingDAO dao = new writingDAO();
-                String finalText = Processor.process(dao.getView(title));
+                String finalText = Processor.process(dao.getView("#"+title));
                 out.println( finalText);
             %>
         </div >

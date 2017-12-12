@@ -37,6 +37,21 @@ public class memberDAO {
         }
         return true;
         }
+    public boolean isSchoolNumber(String schoolNumber){
+        query = "select * from member where schoolnumber='"+schoolNumber+"'";
+        try {
+            resultSet = statement.executeQuery(query);
+            if (resultSet.next())  // 아이디 존재
+                return true;
+        else
+                return false;
+
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return true;
+    }
+
     public boolean isLogin(String id ,String pw){
         query = "select * from member where id ='"+id+"' and pw='"+pw+"'";
         try {

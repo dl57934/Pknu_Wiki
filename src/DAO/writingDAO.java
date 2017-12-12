@@ -27,6 +27,7 @@ public class writingDAO {
     public boolean overlapCheck(writingDTO dto) throws SQLException {
         query = "select * from WRITINGINFO2 where  title='"+dto.getTitle()+"'";
         resultSet = statement.executeQuery(query);
+        resultSet.next();
         if(resultSet.next()) { //같은 타이틀 값이 있다.
             System.out.println("overlap은 true야");
             return true;
@@ -67,7 +68,7 @@ public class writingDAO {
         return true;
     }
     public String getBody(String title){
-        query = "select * from WRITINGINFO2 where title='"+title+"'";
+        query = "select * from WRITINGINFO2 where title='"+"#"+title+"'";
         try {
             resultSet = statement.executeQuery(query);
             while(resultSet.next()){
@@ -80,7 +81,7 @@ public class writingDAO {
         return "";
     }
     public String getTitle(String title){
-        query = "select * from WRITINGINFO2 where title='"+title+"'";
+        query = "select * from WRITINGINFO2 where title='"+"#"+title+"'";
         try {
             resultSet = statement.executeQuery(query);
             while(resultSet.next()){
@@ -95,21 +96,41 @@ public class writingDAO {
     public String getView(String title){
         query = "select * from WRITINGINFO2 where title='"+title+"'";
         try {
-            System.out.println("getView Title: "+title);
             resultSet = statement.executeQuery(query);
             while(resultSet.next()){
-                System.out.println("getView 성공");
                 String viewTitle =  resultSet.getString("title");
                 String viewBody =  resultSet.getString("body");
                 String viewWriter =  resultSet.getString("writer");
                 System.out.println(viewTitle +"\n\r"+ viewBody + "\n\r" + viewWriter);
-                String finalView = viewTitle +"\n\r"+ viewBody + "\n\r" + viewWriter;
+                String finalView = viewTitle +"\n\r"+ viewBody + "<br>작성자:" + viewWriter;
                 return finalView;
             }
             System.out.println("getView 실패");
         } catch (SQLException e) {
             e.printStackTrace();
         }
-      return "<h1>존재하지 않는 글입니다.</h1>";
+      return "<h1>존재하지 않는 글입니다.</h1>" +
+              "<h3><a href=Pknuwiki/view/writing.jsp>작성하시겠습니까?</a></h3>";
+    }
+    public String multiView(String title){
+        query = "select * from WRITINGINFO2 where title='"+title+"'";
+        try {
+            System.out.println("multiView Title: "+title);
+            resultSet = statement.executeQuery(query);
+            String finalView = "";
+            while (resultSet.next()) {
+                String viewTitle = resultSet.getString("title");
+                String viewBody = resultSet.getString("body");
+                String viewWriter = resultSet.getString("writer");
+                System.out.println(viewTitle + "\n\r" + viewBody + "\n\r" + viewWriter);
+                finalView += viewTitle + "\n\r" + viewBody + "<br>작성자: " + viewWriter;
+                finalView += "\n\r";
+            }
+            return finalView;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return "<h1>존재하지 않는 글입니다.</h1>" +
+                "<h3><a href=Pknuwiki/view/writing.jsp>작성하시겠습니까?</a></h3>";
     }
 }
