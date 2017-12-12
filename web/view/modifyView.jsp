@@ -1,8 +1,8 @@
-<%@ page import="com.github.rjeschke.txtmark.*" %><%--
+<%@ page import="DAO.writingDAO" %><%--
   Created by IntelliJ IDEA.
   User: dl579
-  Date: 2017-11-15
-  Time: 오전 1:43
+  Date: 2017-12-10
+  Time: 오후 6:51
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -205,38 +205,38 @@
     <script src="../static/js/respond.min.js?ver=1"></script>
     <![endif]-->
     <script>
-     <%
-            if(session.getAttribute("loginCheck") == null){
-        %>
-        alert("글을 작성하려면 로그인이 필요합니다");
+        <%
+               if(session.getAttribute("loginCheck") == null){
+           %>
+        alert("글을 수정하려면 로그인이 필요합니다");
         window.location.href="http://localhost:3000/PknuWiki/view/main.jsp";
         <%}
 
         %>
-
-            function check() {
-                if(document.getElementById("inputEmail3").value == "") {
-                    alert("제목을 입력해주세요");
-                    $("#inputEmail3").focus();
-                    return false;
-                }
-                else if(document.getElementById("inputPassword3").value == ""){
-                    alert("본문을 입력해주세요");
-                    $("#inputPassword3").focus();
-                    return false;
-                } else {
-                    return true;
-                }
-        };
-            function mySubmit(index) {
-                if(index == 1){
-                    document.fr.action = '/controller?action=writing';
-                }if(index == 2){
-                    document.fr.action = 'preview.jsp';
-                }
-                document.fr.submit();
+        function check() {
+            if(document.getElementById("inputEmail3").value == "") {
+                alert("제목을 입력해주세요");
+                $("#inputEmail3").focus();
+                return false;
             }
+            else if(document.getElementById("inputPassword3").value == ""){
+                alert("본문을 입력해주세요");
+                $("#inputPassword3").focus();
+                return false;
+            } else {
+                return true;
+            }
+        };
+        function mySubmit(index) {
+            if(index == 1){
+                document.fr.action = '/controller?action=setWriting';
+            }if(index == 2){
+                document.fr.action = 'preview.jsp';
+            }
+            document.fr.submit();
+        }
     </script>
+
 </head>
 <body>
 
@@ -272,6 +272,11 @@
 <section id="fh5co-home" data-section="home"
          style="background-image: url(../static/images/full_image_2.jpg);"
          data-stellar-background-ratio="0.5">
+    <%
+        writingDAO writingDAO = new writingDAO();
+        String title = request.getParameter("title");
+        System.out.println(title);
+    %>
     <div class="gradient"></div>
     <div class="container ">
         <div class="text-wrap">
@@ -280,26 +285,25 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div style="padding-bottom: 180px">
                             <h1>게시글 작성</h1>
-                             <form class="form-horizontal" name ="fr" method="post" id="fr" onsubmit="return check()" action="">
+                            <form class="form-horizontal" method="post" name="fr" id="fr" onsubmit="return check()" action="">
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputEmail3" style="font-size: 15px" class="col-sm-2 control-label">제목</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" style="background-color: white; width: 230%; " id="inputEmail3" name="title" placeholder="제목을 입력하세요">
-                                        </span>
+                                        <input type="text" class="form-control" style="background-color: white; width: 85%; " id="inputEmail3" name="title" placeholder="제목을 입력하세요" value=<%=writingDAO.getTitle(title)%>>
                                     </div>
                                 </div>
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputPassword3" class="col-sm-2 control-label" style="font-size: 15px">내용</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" id="inputPassword3" rows="10" style="background-color: white; width: 230%" name="body"></textarea>
+                                        <textarea class="form-control" id="inputPassword3" rows="10" style="background-color: white; width: 85%" name="body" ><%=writingDAO.getBody(title)%></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10"></div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10" align="right">
-                                        <input type="submit"  id ="complete" class="btn btn-primary" onclick="mySubmit(1)"  value="작성완료">  <input type="submit" onclick="mySubmit(2)" id="preview" class="btn btn-primary" value="미리보기">
+                                    <div class="col-sm-offset-2 col-sm-10" align="right" style="margin-right: 100px">
+                                        <input type="submit" id ="complete" class="btn btn-primary"  value="수정하기" onsubmit="mySubmit(1)">  <input type="button" id="preview" class="btn btn-primary" value="미리보기" onsubmit="mySubmit(23)">
                                     </div>
                                 </div>
                             </form>

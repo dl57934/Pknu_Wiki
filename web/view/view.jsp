@@ -1,5 +1,6 @@
 <%@ page import="java.sql.Connection" %>
-<%@ page import="DAO.writingDAO" %><%--
+<%@ page import="DAO.writingDAO" %>
+<%@ page import="com.github.rjeschke.txtmark.Processor" %><%--
   Created by IntelliJ IDEA.
   User: dl579
   Date: 2017-12-03
@@ -192,10 +193,14 @@
 
             </div>
 
-            <form method="post" action="/controller?action=search" class="form-inline" >
-
-                <input rightmargin="0" style="margin-left:52%; background-color: white;width: 300px;height: 40px" type="text" class="form-control">
-                <input type="submit" class="btn btn-primary" style="background-color: white; color: #52d3aa" value="찾기" >
+            <form method="post" action="/controller?action=search"
+                  class="form-inline">
+                <div style="float: right">
+                    <input rightmargin="0"
+                           style="background-color: white; width: 60%; height: 40px"
+                           type="text" class="form-control" name="searchInfo"> <input type="submit"
+                                                                    class="btn btn-primary" value="찾기">
+                </div>
             </form>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right"></ul>
@@ -209,13 +214,16 @@
         <div style="padding-bottom: 180px" name="main">
             <%
                 String title =  request.getParameter("title");
-                String body =  request.getParameter("body");
                 System.out.println(title);
-                System.out.println(body);
                 writingDAO dao = new writingDAO();
-                out.println(dao.getView(title, body));
+                String finalText = Processor.process(dao.getView(title));
+                out.println( finalText);
             %>
         </div >
+        <form method="post" action="/controller?action=modify"  class="form-inline" >
+            <input type="hidden" name="title" value="<%=title%>">
+            <input type="submit" class="btn btn-primary" style="background-color: white; color: #52d3aa" value="수정" >
+        </form>
     </div>
 </section>
 

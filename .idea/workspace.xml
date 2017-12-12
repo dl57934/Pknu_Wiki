@@ -7,12 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a399034-e573-4914-80c8-e8e8b3ef19b2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/view/code.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/view/modifyView.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/view/overlapView.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/view/preview.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/WEB-INF/classes/controler/controller.class" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/WEB-INF/classes/controler/controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/txtmark_0_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/txtmark_0_10.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/main.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Pknu_Wiki_war_exploded/PknuWiki/view/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DAO/webInfoDAO.java" afterPath="$PROJECT_DIR$/src/DAO/webInfoDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DAO/writingDAO.java" afterPath="$PROJECT_DIR$/src/DAO/writingDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controler/controller.java" afterPath="$PROJECT_DIR$/src/controler/controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/login.jsp" afterPath="$PROJECT_DIR$/web/view/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/main.jsp" afterPath="$PROJECT_DIR$/web/view/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/signUp.jsp" afterPath="$PROJECT_DIR$/web/view/signUp.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/view.jsp" afterPath="$PROJECT_DIR$/web/view/view.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/writing.jsp" afterPath="$PROJECT_DIR$/web/view/writing.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,108 +32,60 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="view.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/view/view.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3634">
-              <caret line="158" column="47" lean-forward="false" selection-start-line="158" selection-start-column="47" selection-end-line="158" selection-end-column="47" />
+            <state relative-caret-position="230">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="272" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="memberDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAO/memberDAO.java">
+      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="63" column="41" lean-forward="true" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+            <state relative-caret-position="4646">
+              <caret line="202" column="81" lean-forward="false" selection-start-line="202" selection-start-column="81" selection-end-line="202" selection-end-column="81" />
               <folding>
-                <marker date="1511531995155" expanded="true" signature="804:842" ph="select * fro... member" />
-                <marker date="1511531995155" expanded="true" signature="1209:1264" ph="select * fro... member" />
-                <marker date="1511531995155" expanded="true" signature="1641:1751" ph="insert into member... " />
-                <marker date="1511531995155" expanded="true" signature="1779:1800" ph="select * fro... webinfo" />
-                <marker date="1511531995155" expanded="true" signature="2176:2203" ph="update webin... " />
+                <marker date="1513096637447" expanded="false" signature="20329:20349" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="20377:20397" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="20425:20445" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="20555:20575" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="20603:20623" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="20651:20671" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="20781:20801" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="20829:20849" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="20877:20897" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="21007:21027" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="21055:21075" ph="..." />
+                <marker date="1513096637447" expanded="false" signature="21103:21123" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="writingDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DAO/writingDAO.java">
+      <file leaf-file-name="code.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/code.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1512549434430" expanded="true" signature="861:893" ph="select * fro... writinginfo2" />
-                <marker date="1512549434430" expanded="true" signature="861:921" ph="select * fro... member" />
-                <marker date="1512549434430" expanded="true" signature="1402:1434" ph="insert into WRITINGINFO2... " />
-                <marker date="1512549434430" expanded="true" signature="1402:1435" ph="insert into WRITINGINFO2... " />
-                <marker date="1512549434430" expanded="true" signature="1402:1436" ph="insert into WRITINGINFO2... " />
-                <marker date="1512549434430" expanded="true" signature="1402:1450" ph="insert into WRITINGINFO2... " />
-                <marker date="1512549434430" expanded="true" signature="1402:1498" ph="insert into writinginfo... " />
-                <marker date="1512549434430" expanded="true" signature="1727:1799" ph="select * fro... writinginfo2" />
-                <marker date="1512549434430" expanded="true" signature="2300:2327" ph="update webin... " />
-                <marker date="1512549434430" expanded="true" signature="2300:2329" ph="update webin... " />
-                <marker date="1512549434430" expanded="true" signature="2706:2756" ph="select * fro... WRITINGINFO2" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webInfoDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAO/webInfoDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-              <folding>
-                <marker date="1512549434477" expanded="true" signature="701:722" ph="select * fro... webinfo" />
-                <marker date="1512549434477" expanded="true" signature="1058:1079" ph="select * fro... webinfo" />
-                <marker date="1512549434477" expanded="true" signature="1416:1437" ph="select * fro... webinfo" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="writingDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DTO/writingDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="23">
+              <caret line="461" column="0" lean-forward="false" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="writing.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/writing.jsp">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/static/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4876">
-              <caret line="212" column="11" lean-forward="false" selection-start-line="212" selection-start-column="11" selection-end-line="212" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="memberDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DTO/memberDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signUp.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/signUp.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7475">
-              <caret line="325" column="0" lean-forward="false" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,38 +94,79 @@
       <file leaf-file-name="controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controler/controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1633">
-              <caret line="138" column="51" lean-forward="false" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
+            <state relative-caret-position="230">
+              <caret line="79" column="65" lean-forward="false" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#doGet#0;class#controller#0" expanded="false" />
-                <element signature="method#login#0;class#controller#0" expanded="false" />
-                <element signature="method#SignUp#0;class#controller#0" expanded="false" />
-                <element signature="method#logOut#0;class#controller#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
+      <file leaf-file-name="writingDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DTO/writingDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8901">
-              <caret line="387" column="14" lean-forward="false" selection-start-line="333" selection-start-column="4" selection-end-line="387" selection-end-column="14" />
+            <state relative-caret-position="391">
+              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webInfoDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DTO/webInfoDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
-                <marker date="1512372430470" expanded="false" signature="21362:21382" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="21410:21430" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="21458:21478" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="21588:21608" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="21636:21656" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="21684:21704" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="21814:21834" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="21862:21882" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="21910:21930" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="22040:22060" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="22088:22108" ph="..." />
-                <marker date="1512372430470" expanded="false" signature="22136:22156" ph="..." />
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="writingDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAO/writingDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+              <folding>
+                <marker date="1513098226272" expanded="true" signature="861:893" ph="select * fro... writinginfo2" />
+                <marker date="1513098226272" expanded="true" signature="861:921" ph="select * fro... member" />
+                <marker date="1513098226272" expanded="true" signature="1344:1376" ph="insert into WRITINGINFO2... " />
+                <marker date="1513098226272" expanded="true" signature="1344:1377" ph="insert into WRITINGINFO2... " />
+                <marker date="1513098226272" expanded="true" signature="1344:1378" ph="insert into WRITINGINFO2... " />
+                <marker date="1513098226272" expanded="true" signature="1344:1392" ph="insert into WRITINGINFO2... " />
+                <marker date="1513098226272" expanded="true" signature="1344:1440" ph="insert into writinginfo... " />
+                <marker date="1513098226272" expanded="true" signature="1669:1741" ph="select * fro... writinginfo2" />
+                <marker date="1513098226272" expanded="true" signature="2312:2344" ph="update webin... " />
+                <marker date="1513098226272" expanded="true" signature="2312:2346" ph="update webin... " />
+                <marker date="1513098226272" expanded="true" signature="2708:2748" ph="select * fro... WRITINGINFO2" />
+                <marker date="1513098226272" expanded="true" signature="2708:2758" ph="select * fro... WRITINGINFO2" />
+                <marker date="1513098226272" expanded="true" signature="3140:3190" ph="select * fro... WRITINGINFO2" />
+                <marker date="1513098226272" expanded="true" signature="3573:3623" ph="select * fro... WRITINGINFO2" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="overlapView.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/view/overlapView.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google_map.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/static/js/google_map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="30" column="58" lean-forward="false" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,9 +183,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ha</find>
-      <find>wren</find>
-      <find>youtube</find>
       <find>map</find>
       <find>get</find>
       <find>Services</find>
@@ -210,6 +210,9 @@
       <find>class</find>
       <find>writinginfo</find>
       <find>guide</find>
+      <find>docu</find>
+      <find>document</find>
+      <find>window</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,18 +240,22 @@
         <option value="$PROJECT_DIR$/web/view/completeUpload.jsp" />
         <option value="$PROJECT_DIR$/src/DTO/webInfoDTO.java" />
         <option value="$PROJECT_DIR$/src/DAO/memberDAO.java" />
-        <option value="$PROJECT_DIR$/web/view/login.jsp" />
         <option value="$PROJECT_DIR$/web/view/test.jsp" />
         <option value="$PROJECT_DIR$/web/static/js/google_map.js" />
         <option value="$PROJECT_DIR$/src/DTO/writingDTO.java" />
-        <option value="$PROJECT_DIR$/web/view/writing.jsp" />
-        <option value="$PROJECT_DIR$/web/view/signUp.jsp" />
         <option value="$PROJECT_DIR$/src/DTO/memberDTO.java" />
-        <option value="$PROJECT_DIR$/web/view/main.jsp" />
-        <option value="$PROJECT_DIR$/src/controler/controller.java" />
-        <option value="$PROJECT_DIR$/web/view/view.jsp" />
         <option value="$PROJECT_DIR$/src/DAO/webInfoDAO.java" />
+        <option value="$PROJECT_DIR$/web/view/modifyView.jsp" />
+        <option value="$PROJECT_DIR$/web/view/login.jsp" />
+        <option value="$PROJECT_DIR$/web/view/preview.jsp" />
+        <option value="$PROJECT_DIR$/web/view/signUp.jsp" />
+        <option value="$PROJECT_DIR$/web/view/view.jsp" />
+        <option value="$PROJECT_DIR$/web/view/writing.jsp" />
+        <option value="$PROJECT_DIR$/web/view/main.jsp" />
+        <option value="$PROJECT_DIR$/web/view/code.jsp" />
         <option value="$PROJECT_DIR$/src/DAO/writingDAO.java" />
+        <option value="$PROJECT_DIR$/src/controler/controller.java" />
+        <option value="$PROJECT_DIR$/web/view/overlapView.jsp" />
       </list>
     </option>
   </component>
@@ -266,8 +273,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="771" />
-    <option name="y" value="177" />
+    <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
@@ -286,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -315,6 +320,12 @@
             <path>
               <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pknu_Wiki" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pknu_Wiki" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -337,8 +348,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,7 +361,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20404412" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/txtmark-0.10.jar/txtmark-0.10.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/txtmark-0.10.jar!/" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -645,7 +657,13 @@
       <workItem from="1512379595665" duration="2871000" />
       <workItem from="1512491785552" duration="631000" />
       <workItem from="1512523633852" duration="16000" />
-      <workItem from="1512548765599" duration="669000" />
+      <workItem from="1512548765599" duration="1324000" />
+      <workItem from="1512614822773" duration="600000" />
+      <workItem from="1512665640314" duration="5372000" />
+      <workItem from="1512896866588" duration="13146000" />
+      <workItem from="1512917377648" duration="1425000" />
+      <workItem from="1513095565131" duration="2787000" />
+      <workItem from="1513098727959" duration="193000" />
     </task>
     <task id="LOCAL-00001" summary="컨트롤러 생성">
       <created>1510739915409</created>
@@ -766,18 +784,25 @@
       <option name="project" value="LOCAL" />
       <updated>1512374456372</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="메인의 writing 수 증가">
+      <created>1512549483487</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1512549483487</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158680000" />
+    <option name="totallyTimeSpent" value="182858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -790,7 +815,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16302083" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17447917" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20520833" sideWeight="0.5065789" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -803,7 +828,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -887,40 +911,17 @@
     <MESSAGE value="마크다운 -&gt; html, 같은 글 인증, 입력칸 비어있는거 검증" />
     <MESSAGE value="보여지는거까지 완성했음" />
     <MESSAGE value="보이기 서치 기능 구현 디비 용량 4기가 까지 확장" />
-    <option name="LAST_COMMIT_MESSAGE" value="보이기 서치 기능 구현 디비 용량 4기가 까지 확장" />
+    <MESSAGE value="메인의 writing 수 증가" />
+    <MESSAGE value="access가 거부되었습니다. 오류 발생" />
+    <option name="LAST_COMMIT_MESSAGE" value="access가 거부되었습니다. 오류 발생" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/static/images/full_image_2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/images/images.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/images/img_8.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/images/img_10.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/images/law_iconsArtboard_1-2-512.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/static/images/person1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1058,20 +1059,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/js/google_map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DTO/webInfoDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Downloads/txtmark-0.13.jar!/com/github/rjeschke/txtmark/Block.class" />
     <entry file="jar://$USER_HOME$/Downloads/txtmark-0.13.jar!/com/github/rjeschke/txtmark/Processor.class" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
@@ -1089,107 +1076,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DTO/memberDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DTO/writingDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/writing.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4876">
-          <caret line="212" column="11" lean-forward="false" selection-start-line="212" selection-start-column="11" selection-end-line="212" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/signUp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7475">
-          <caret line="325" column="0" lean-forward="false" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controler/controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="138" column="51" lean-forward="false" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#doGet#0;class#controller#0" expanded="false" />
-            <element signature="method#login#0;class#controller#0" expanded="false" />
-            <element signature="method#SignUp#0;class#controller#0" expanded="false" />
-            <element signature="method#logOut#0;class#controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8901">
-          <caret line="387" column="14" lean-forward="false" selection-start-line="333" selection-start-column="4" selection-end-line="387" selection-end-column="14" />
-          <folding>
-            <marker date="1512372430470" expanded="false" signature="21362:21382" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="21410:21430" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="21458:21478" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="21588:21608" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="21636:21656" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="21684:21704" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="21814:21834" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="21862:21882" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="21910:21930" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="22040:22060" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="22088:22108" ph="..." />
-            <marker date="1512372430470" expanded="false" signature="22136:22156" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/view.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3634">
-          <caret line="158" column="47" lean-forward="false" selection-start-line="158" selection-start-column="47" selection-end-line="158" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/memberDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="63" column="41" lean-forward="true" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-          <folding>
-            <marker date="1511531995155" expanded="true" signature="804:842" ph="select * fro... member" />
-            <marker date="1511531995155" expanded="true" signature="1209:1264" ph="select * fro... member" />
-            <marker date="1511531995155" expanded="true" signature="1641:1751" ph="insert into member... " />
-            <marker date="1511531995155" expanded="true" signature="1779:1800" ph="select * fro... webinfo" />
-            <marker date="1511531995155" expanded="true" signature="2176:2203" ph="update webin... " />
-          </folding>
+        <state relative-caret-position="92">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/webInfoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="782">
           <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding>
             <marker date="1512549434477" expanded="true" signature="701:722" ph="select * fro... webinfo" />
@@ -1199,24 +1102,159 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4968">
+          <caret line="216" column="77" lean-forward="false" selection-start-line="216" selection-start-column="77" selection-end-line="216" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/modifyView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5888">
+          <caret line="260" column="76" lean-forward="false" selection-start-line="260" selection-start-column="76" selection-end-line="260" selection-end-column="76" />
+          <folding>
+            <element signature="e#6547#6626#0#JSP" expanded="false" />
+            <element signature="e#6750#6765#0#JSP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/preview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4554">
+          <caret line="198" column="151" lean-forward="false" selection-start-line="198" selection-start-column="151" selection-end-line="198" selection-end-column="151" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/signUp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5244">
+          <caret line="228" column="77" lean-forward="false" selection-start-line="228" selection-start-column="77" selection-end-line="228" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/writing.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5980">
+          <caret line="260" column="77" lean-forward="false" selection-start-line="260" selection-start-column="77" selection-end-line="260" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/js/google_map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" column="58" lean-forward="false" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/view.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="272" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DTO/webInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4646">
+          <caret line="202" column="81" lean-forward="false" selection-start-line="202" selection-start-column="81" selection-end-line="202" selection-end-column="81" />
+          <folding>
+            <marker date="1513096637447" expanded="false" signature="20329:20349" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="20377:20397" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="20425:20445" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="20555:20575" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="20603:20623" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="20651:20671" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="20781:20801" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="20829:20849" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="20877:20897" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="21007:21027" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="21055:21075" ph="..." />
+            <marker date="1513096637447" expanded="false" signature="21103:21123" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DTO/writingDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/writingDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="644">
+          <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1512549434430" expanded="true" signature="861:893" ph="select * fro... writinginfo2" />
-            <marker date="1512549434430" expanded="true" signature="861:921" ph="select * fro... member" />
-            <marker date="1512549434430" expanded="true" signature="1402:1434" ph="insert into WRITINGINFO2... " />
-            <marker date="1512549434430" expanded="true" signature="1402:1435" ph="insert into WRITINGINFO2... " />
-            <marker date="1512549434430" expanded="true" signature="1402:1436" ph="insert into WRITINGINFO2... " />
-            <marker date="1512549434430" expanded="true" signature="1402:1450" ph="insert into WRITINGINFO2... " />
-            <marker date="1512549434430" expanded="true" signature="1402:1498" ph="insert into writinginfo... " />
-            <marker date="1512549434430" expanded="true" signature="1727:1799" ph="select * fro... writinginfo2" />
-            <marker date="1512549434430" expanded="true" signature="2300:2327" ph="update webin... " />
-            <marker date="1512549434430" expanded="true" signature="2300:2329" ph="update webin... " />
-            <marker date="1512549434430" expanded="true" signature="2706:2756" ph="select * fro... WRITINGINFO2" />
+            <marker date="1513098226272" expanded="true" signature="861:893" ph="select * fro... writinginfo2" />
+            <marker date="1513098226272" expanded="true" signature="861:921" ph="select * fro... member" />
+            <marker date="1513098226272" expanded="true" signature="1344:1376" ph="insert into WRITINGINFO2... " />
+            <marker date="1513098226272" expanded="true" signature="1344:1377" ph="insert into WRITINGINFO2... " />
+            <marker date="1513098226272" expanded="true" signature="1344:1378" ph="insert into WRITINGINFO2... " />
+            <marker date="1513098226272" expanded="true" signature="1344:1392" ph="insert into WRITINGINFO2... " />
+            <marker date="1513098226272" expanded="true" signature="1344:1440" ph="insert into writinginfo... " />
+            <marker date="1513098226272" expanded="true" signature="1669:1741" ph="select * fro... writinginfo2" />
+            <marker date="1513098226272" expanded="true" signature="2312:2344" ph="update webin... " />
+            <marker date="1513098226272" expanded="true" signature="2312:2346" ph="update webin... " />
+            <marker date="1513098226272" expanded="true" signature="2708:2748" ph="select * fro... WRITINGINFO2" />
+            <marker date="1513098226272" expanded="true" signature="2708:2758" ph="select * fro... WRITINGINFO2" />
+            <marker date="1513098226272" expanded="true" signature="3140:3190" ph="select * fro... WRITINGINFO2" />
+            <marker date="1513098226272" expanded="true" signature="3573:3623" ph="select * fro... WRITINGINFO2" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controler/controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="79" column="65" lean-forward="false" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
+          <folding>
+            <element signature="method#doGet#0;class#controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/code.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="461" column="0" lean-forward="false" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/overlapView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1298,7 +1336,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>JAX-WS-Apache Axis</last-edited>
+          <last-edited>txtmark-0.10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

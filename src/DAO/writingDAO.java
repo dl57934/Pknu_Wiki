@@ -27,7 +27,6 @@ public class writingDAO {
     public boolean overlapCheck(writingDTO dto) throws SQLException {
         query = "select * from WRITINGINFO2 where  title='"+dto.getTitle()+"'";
         resultSet = statement.executeQuery(query);
-        System.out.println("overlap: "+resultSet.next());
         if(resultSet.next()) { //같은 타이틀 값이 있다.
             System.out.println("overlap은 true야");
             return true;
@@ -48,12 +47,14 @@ public class writingDAO {
                 if(resultSet.next()){
                     CLOB cl = ((OracleResultSet)resultSet).getCLOB("body");
                     BufferedWriter writer = new BufferedWriter(cl.getCharacterOutputStream());
-                    writer.write(dto.getBody().toString());
+                    writer.write(dto.getBody());
                     writer.close();
                     connection.commit();
                     connection.setAutoCommit(true);
                     int webPage= webInfoDAO.getwritingPage();
-                    String query3 = "update webinfo set member ="+webPage++;
+                    System.out.println(webPage);
+                    webPage+=1;
+                    String query3 = "update webinfo set writingpage ="+webPage;
                     statement.executeUpdate(query3);
                     System.out.println("db에 넣기 성공");
                 }
@@ -65,10 +66,35 @@ public class writingDAO {
         }
         return true;
     }
-    public String getView(String title, String body){
+    public String getBody(String title){
         query = "select * from WRITINGINFO2 where title='"+title+"'";
         try {
-            System.out.println("getView Body: "+body);
+            resultSet = statement.executeQuery(query);
+            while(resultSet.next()){
+                String viewBody =  resultSet.getString("body");
+                return viewBody;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+    public String getTitle(String title){
+        query = "select * from WRITINGINFO2 where title='"+title+"'";
+        try {
+            resultSet = statement.executeQuery(query);
+            while(resultSet.next()){
+                String viewTitle = resultSet.getString("title");
+                return viewTitle;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+    public String getView(String title){
+        query = "select * from WRITINGINFO2 where title='"+title+"'";
+        try {
             System.out.println("getView Title: "+title);
             resultSet = statement.executeQuery(query);
             while(resultSet.next()){

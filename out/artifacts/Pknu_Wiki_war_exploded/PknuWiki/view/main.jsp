@@ -199,7 +199,6 @@
 					<a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
 				</div>
 					<form method="post" action="/controller?action=search" class="form-inline" >
-
 						<input rightmargin="0" style="margin-left:34%; background-color: white;width: 30%;height: 20%" type="text" class="form-control" name="searchInfo">
 						<input type="submit" class="btn btn-primary" value="찾기" >
 					</form>
@@ -218,7 +217,7 @@
 	</header>
 	<section id="fh5co-home" data-section="home" style="background-image: url(../static/images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="gradient"></div>
-		<div class="container">F
+		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
@@ -290,7 +289,7 @@
 			</div>
 			<div class="row watch-video text-center to-animate">
 				<span>Watch the video</span>
-				<a href="https://www.youtube.com/watch?v=GA_WLk9Ivj4" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
+				<a href="https://www.youtube.com/watch?v=3Y4Tm1T-UcA" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
 			</div>
 		</div>
 	</section>
@@ -344,45 +343,29 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="../images/person1.jpg" alt="Image"></figure>
-						<h3>이상훈</h3>
-						<span class="fh5co-position">Web Designer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="../images/person2.jpg" alt="Image"></figure>
-						<h3>황선영</h3>
-						<span class="fh5co-position">Web Developer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="../images/person3.jpg" alt="Image"></figure>
-						<h3>Larry Ben</h3>
-						<span class="fh5co-position">Web Designer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
+				<h3><hr>
+					<h1><a href="#2-마크다운-사용법문법" aria-hidden="true" class="anchor" id="user-content-2-마크다운-사용법문법"></a>1. 마크다운 사용법(문법)</h1>
+					<h2><a href="#21-헤더headers" aria-hidden="true" class="anchor" id="user-content-21-헤더headers"></a>1.1. 헤더Headers</h2>
+					<ul>
+						<li>
+							<p>큰제목: 문서 제목</p>
+							<pre><code>This is an H1
+=============
+</code></pre>
+							<h1><a href="#this-is-an-h1" aria-hidden="true" class="anchor" id="user-content-this-is-an-h1"></a>This is an H1</h1>
+						</li>
+						<li>
+							<p>작은제목: 문서 부제목</p>
+							<pre><code>This is an H2
+-------------
+</code></pre>
+							<h2><a href="#this-is-an-h2" aria-hidden="true" class="anchor" id="user-content-this-is-an-h2"></a>This is an H2</h2>
+						</li>
+						<li>
+							<p>글머리: 1~6까지만 지원</p>
+						</li>
+					</ul> <a href="code.jsp">더알아보기</a>
+					</h3>
 			</div>
 		</div>
 	</section>
@@ -544,7 +527,7 @@
 	</section>
 
 	<section id="fh5co-contact" data-section="contact">
-		<div class="container" style="padding-right: ">
+		<div class="container" >
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="to-animate">관리자에게 메세지 보내기</h2>
@@ -674,7 +657,7 @@
 	<script src="../static/js/jquery.magnific-popup.min.js?ver=1"></script>
 	<script src="../static/js/magnific-popup-options.js?ver=1"></script>
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false?ver=1"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQb1XgQ5rJf8hzn1C3TXFQnopKBOtiQVo&sensor=false?ver=1"></script>
 	<script src="../static/js/google_map.js?ver=1"></script>
 
 

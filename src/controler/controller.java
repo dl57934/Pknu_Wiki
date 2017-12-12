@@ -4,7 +4,8 @@ import DAO.memberDAO;
 import DAO.writingDAO;
 import DTO.memberDTO;
 import DTO.writingDTO;
-import com.github.rjeschke.txtmark.*;
+import com.github.rjeschke.txtmark.Processor;
+
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.sql.SQLException;
 
@@ -52,19 +54,35 @@ public class controller extends HttpServlet {
            case"writing":
                 writing(request,response);
                 break;
+           case"modify":
+                modify(request,response);
+                break;
+           case"preview":
+                preview(request,response);
+                break;
        }
     }
+    private void preview(HttpServletRequest request, HttpServletResponse response){
+
+    }
+     private void modify(HttpServletRequest request, HttpServletResponse response){
+         String title = request.getParameter("title");
+         try {
+             title = URLEncoder.encode(title, "UTF-8");
+             response.sendRedirect("PknuWiki/view/modifyView.jsp?title="+title);
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
+     }
      private void search(HttpServletRequest request,HttpServletResponse response){
         String searchInfo = request.getParameter("searchInfo");
          try {
              searchInfo = URLEncoder.encode(searchInfo, "UTF-8");
-             response.sendRedirect("http://localhost:3000/PknuWiki/view/view.jsp?title="+"<h1>"+searchInfo+"<%2Fh1>%0A");
          } catch (IOException e) {
              e.printStackTrace();
          }
      }
      private void login(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
         memberDAO dao = new memberDAO();
         String id = request.getParameter("id");
         HttpSession httpSession = request.getSession();
@@ -98,14 +116,16 @@ public class controller extends HttpServlet {
         write.println("history.back();");
         write.println("</script>");
         write.flush();
+        write.close();
     }else{
         if(pw.equals(pwCheck)) {
             if(dao.signUp(dto)) {
                 System.out.println("회원가입 완료");
-                write.println("alert('부경위키에 환영합니다.');");
+                write.println("alert('부경위키에 환영합니다.');window.location.href='http://localhost:3000/PknuWiki/view/main.jsp';");
+                write.println("");
                 write.println("</script>");
                 write.flush();
-                response.sendRedirect("PknuWiki/view/main.jsp");
+                write.close();
             }else{
                 response.sendRedirect("PknuWiki/view/signUp.jsp");
             }
@@ -137,15 +157,12 @@ public class controller extends HttpServlet {
          String title = "#"+request.getParameter("title");
          String body = request.getParameter("body");
          String writer = (String)session.getAttribute("id");
-         String htmlTitle = Processor.process(title);
-         String htmlBody = Processor.process(body);
-         System.out.println(htmlTitle + htmlBody);
-         writingDTO dto = new writingDTO(htmlTitle, htmlBody, writer);
+         System.out.println(title + body);
+         writingDTO dto = new writingDTO(title, body, writer);
          writingDAO dao = new writingDAO();
          try {
              if(dao.setWriting(dto) == true){
-                  title = URLEncoder.encode(htmlTitle, "UTF-8");
-                  body = URLEncoder.encode(htmlBody, "UTF-8");
+                    title = URLEncoder.encode(title, "UTF-8");
                     response.sendRedirect("http://localhost:3000/PknuWiki/view/view.jsp?title="+title);
              }else {
                  response.setContentType("text/html;charset=utf-8");

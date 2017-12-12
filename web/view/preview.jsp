@@ -1,12 +1,13 @@
 <%--
   Created by IntelliJ IDEA.
   User: dl579
-  Date: 2017-11-21
-  Time: 오전 1:59
+  Date: 2017-12-10
+  Time: 오후 9:08
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
-
+<%@ page import="com.github.rjeschke.txtmark.Processor" %>
+<%@ page import="java.net.URLEncoder" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -16,23 +17,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PKNU WIKI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.min.css">
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
-
-    <!--
-      //////////////////////////////////////////////////////
-
-      FREE HTML5 TEMPLATE
-      DESIGNED & DEVELOPED by FREEHTML5.CO
-
-      Website: 		http://freehtml5.co/
-      Email: 			info@freehtml5.co
-      Twitter: 		http://twitter.com/fh5co
-      Facebook: 		https://www.facebook.com/fh5co
-
-      //////////////////////////////////////////////////////
-       -->
-
-    <!-- Facebook and Twitter integration -->
     <meta property="og:title" content=""/>
     <meta property="og:image" content=""/>
     <meta property="og:url" content=""/>
@@ -106,7 +97,7 @@
             margin-left: -140px;
         }
         #colour-variations h3 {
-            text-align: center;
+            text-align: center;;
             font-size: 11px;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -151,8 +142,6 @@
             zoom: 1;
             *display: inline;
         }
-
-
         .option-toggle {
             position: absolute;
             right: 0;
@@ -165,6 +154,7 @@
             text-align: center;
             border-top-right-radius: 4px;
             border-bottom-right-radius: 4px;
+            color: #fff;
             cursor: pointer;
             -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
             -moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
@@ -175,8 +165,10 @@
             top: 2px;
             position: relative;
         }
-        .main{
-            text-align: center;
+        .option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+            color:  #fff;
+            text-decoration: none;
+            outline: none;
         }
     </style>
     <!-- End demo purposes only -->
@@ -187,47 +179,25 @@
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="../static/js/respond.min.js?ver=1"></script>
-    <![endif]-->)
-    <script>
-        <%--<%
-            if(session.getAttribute("loginCheck") == null){
-        %>
-        alert("글을 작성하려면 로그인이 필요합니다");
-        window.location.href="http://localhost:3000/PknuWiki/view/main.jsp";
-        <%}
-
-        %>--%>
-
-        function check() {
-            if(document.getElementById("id").value == "" || document.getElementById("name").value == "" || document.getElementById("schoolNumber").value == "" || document.getElementById("password").value == "" || document.getElementById("passwordCheck").value == ""  ) {
-                alert("모든 입력칸에 값을 넣어주세요.");
-
-                return false;
-            }else{
-                return true;
-            }
-        }
-    </script>
-
+    <![endif]-->
 </head>
 <body>
-<header role="banner" id="fh5co-header">
+<header role="banner" id="fh5co-header" style="background-color: #52d3aa;margin-top:0 ">
     <div class="container">
         <!-- <div class="row"> -->
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <!-- Mobile Toggle Menu Button -->
                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
+                <a class="navbar-brand" href="main.jsp" >PKNU WIKI</a>
 
             </div>
+
             <form method="post" action="/controller?action=search"
                   class="form-inline">
                 <div style="float: right">
-                    <input rightmargin="0"
-                           style="background-color: white; width: 60%; height: 40px"
-                           type="text" class="form-control" name="searchInfo"> <input type="submit"
-                                                                    class="btn btn-primary" value="찾기">
+                    <input rightmargin="0" style="background-color: white; width: 60%; height: 40px" type="text" class="form-control" name="searchInfo">
+                    <input type="submit" class="btn btn-primary" value="찾기">
                 </div>
             </form>
             <div id="navbar" class="navbar-collapse collapse">
@@ -237,51 +207,23 @@
         <!-- </div> -->
     </div>
 </header>
-<section id="fh5co-home" data-section="home" style="background-image: url(../static/images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
-    <div class="gradient"></div>
+<section id="fh5co-about" data-section="Guide">
     <div class="container">
-        <div class="text-wrap">
-            <div class="text-inner">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="to-animate title" >PKNU WIKI 회원가입</h1>
-                        <div class="main">
-                                    <form  method="post"  class="form-horizontal" action="/controller?action=signUp"  onsubmit="return check()" style="display: inline">
-                                        <br>
-                                        <br>
-                                        <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">이름: <input type="text" name="name" id ="name" placeholder="이름" style="color: #0b0b0b; "></span>
-                                        </div>
-                                        <br>
-                                        <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">아이디: <input type="text" name="id" id="id" placeholder="아이디" style="color: #0b0b0b"></span>
-                                        </div>
-                                        <br>
-                                        <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2';padding-left: 110px" > 학번: <input type="text" name="schoolNumber" id="schoolNumber" placeholder="학번" style="color: #0b0b0b">&nbsp<button id ="sendButton"class="btn-primary btn" >학생 인증</button></span>
-                                        </div>
-                                        <br>
-                                        <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">비밀번호: <input class="" type="password" name="password" id="password" placeholder="비밀번호" style="color: #0b0b0b"></span>
-                                        </div>
-                                        <br>
-                                        <div class="form-group">
-                                            <span style="font-family: 'a옛날사진관2'">비밀번호 확인: <input type="password" name="passwordCheck" id="passwordCheck"placeholder="비밀번호 확인" style="color: #0b0b0b"></span>
-                                        </div>
-                                        <br>
-                                        <br>
-                                        <div>
-                                            <span> <input class="btn btn-primary" type="submit" value="회원가입"></span>
-                                        </div>
-                                    </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div style="padding-bottom: 180px" name="main">
+            <%
+                request.setCharacterEncoding("UTF-8");
+                String title =  request.getParameter("title");
+                String body = request.getParameter("body");
+                System.out.println(title+body);
+                title = Processor.process(title);
+                body = Processor.process(body);
+                out.println( title+body);
+            %>
+        </div >
+        <button type="" class="btn btn-primary" style="background-color: white; color: #52d3aa" onclick="history.back()" >되돌아 가기</button>
     </div>
-    <div class="slant"></div>
 </section>
+
 
 <footer id="footer" role="contentinfo">
     <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
@@ -326,4 +268,3 @@
 
 </body>
 </html>
-
