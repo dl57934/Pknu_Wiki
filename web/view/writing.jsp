@@ -220,21 +220,31 @@
                     $("#inputEmail3").focus();
                     return false;
                 }
-                else if(document.getElementById("inputPassword3").value == ""){
-                    alert("본문을 입력해주세요");
+                if( document.getElementById("inputPassword3").value == ""){
+                    alert("본문이 비어있습니다")
                     $("#inputPassword3").focus();
                     return false;
-                } else {
+                }
+                if($(".textar").val().length < 15){
+                    return false;
+                }
+                if($(".textar").val().length
+                    > 15){
                     return true;
                 }
+                return true;
         };
             function mySubmit(index) {
+                if(check()){
                 if(index == 1){
                     document.fr.action = '/controller?action=writing';
                 }if(index == 2){
                     document.fr.action = 'preview.jsp';
                 }
                 document.fr.submit();
+                    }else{
+                    return false;
+                }
             }
     </script>
 </head>
@@ -280,7 +290,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div style="padding-bottom: 180px">
                             <h1>게시글 작성</h1>
-                             <form class="form-horizontal" name ="fr" method="post" id="fr" onsubmit="return check()" action="">
+                             <form class="form-horizontal" name ="fr" method="post" id="fr"  >
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputEmail3" style="font-size: 15px" class="col-sm-2 control-label">제목</label>
                                     <div class="col-sm-10">
@@ -291,7 +301,7 @@
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputPassword3" class="col-sm-2 control-label" style="font-size: 15px">내용</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" id="inputPassword3" rows="10" style="background-color: white; width: 230%" name="body"></textarea>
+                                        <textarea class="form-control textar" minlength="15" id="inputPassword3" rows="10" style="background-color: white; width: 230%" name="body"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">

@@ -56,7 +56,40 @@ public class controller extends HttpServlet {
            case"preview":
                 preview(request,response);
                 break;
+           case"discussion":
+               discussion(request,response);
+               break;
+           case"repairWriting":
+                repairWriting(request,response);
+                break;
        }
+    }
+    public void repairWriting(HttpServletRequest request, HttpServletResponse response){
+        String title = request.getParameter("title");
+        String body = request.getParameter("body");
+        System.out.println("repair Writing: "+title+body);
+        writingDAO writingDAO = new writingDAO();
+        if(writingDAO.repairwriting(title,body))
+        {
+            try {
+                title = URLEncoder.encode(title, "UTF-8");
+                response.sendRedirect("PknuWiki/view/view.jsp?title="+title);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }else{
+
+        }
+
+    }
+    private void discussion (HttpServletRequest request, HttpServletResponse response){
+           String title = request.getParameter("title");
+        try {
+            title = URLEncoder.encode(title, "UTF-8");
+            response.sendRedirect("https://livechattingpknuwiki.firebaseapp.com?title="+title);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     private void preview(HttpServletRequest request, HttpServletResponse response){
 
@@ -167,14 +200,10 @@ public class controller extends HttpServlet {
      }
      public void writing(HttpServletRequest request, HttpServletResponse response) throws IOException {
          HttpSession session = request.getSession();
-         System.out.println(request.getParameter("action"));
-         System.out.println(request.getParameter("title"));
-         System.out.println(request.getParameter("body"));
-         String title = "#"+request.getParameter("title");
+         String title = request.getParameter("title");
          String body = request.getParameter("body");
          String writer = (String)session.getAttribute("id");
-         System.out.println(title + body);
-         writingDTO dto = new writingDTO(title, body, writer);
+         writingDTO dto = new writingDTO("#"+title, body, writer);
          writingDAO dao = new writingDAO();
          try {
              if(dao.setWriting(dto) == true){

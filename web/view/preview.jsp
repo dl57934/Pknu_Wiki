@@ -212,7 +212,7 @@
         <div style="padding-bottom: 180px" name="main">
             <%
                 request.setCharacterEncoding("UTF-8");
-                String title =  request.getParameter("title");
+                String title =  "#"+request.getParameter("title");
                 String body = request.getParameter("body");
                 System.out.println(title+body);
                 title = Processor.process(title);

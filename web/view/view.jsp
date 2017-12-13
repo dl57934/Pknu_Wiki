@@ -214,7 +214,6 @@
         <div style="padding-bottom: 180px" name="main">
             <%
                 String title =  request.getParameter("title");
-                System.out.println(title);
                 writingDAO dao = new writingDAO();
                 String finalText = Processor.process(dao.getView("#"+title));
                 out.println( finalText);
@@ -223,6 +222,10 @@
         <form method="post" action="/controller?action=modify"  class="form-inline" >
             <input type="hidden" name="title" value="<%=title%>">
             <input type="submit" class="btn btn-primary" style="background-color: white; color: #52d3aa" value="수정" >
+        </form>
+        <form method="post" action="/controller?action=discussion"  class="form-inline" >
+            <input type="hidden" name="title" value="<%=title%>">
+            <input type="submit" class="btn btn-primary" style="background-color: white; color: #52d3aa" value="토론" >
         </form>
     </div>
 </section>

@@ -229,11 +229,11 @@
         };
         function mySubmit(index) {
             if(index == 1){
-                document.fr.action = '/controller?action=setWriting';
+                document.fr3.action = ' /controller?action=repairWriting';
             }if(index == 2){
-                document.fr.action = 'preview.jsp';
+                document.fr3.action = 'preview.jsp';
             }
-            document.fr.submit();
+            document.fr3.submit();
         }
     </script>
 
@@ -275,8 +275,11 @@
     <%
         writingDAO writingDAO = new writingDAO();
         String title = request.getParameter("title");
-        System.out.println(title);
+        System.out.println("modify View Title: "+writingDAO.getTitle(title));
+         title = writingDAO.getTitle(title);
+         title = title.substring(1);
     %>
+
     <div class="gradient"></div>
     <div class="container ">
         <div class="text-wrap">
@@ -284,18 +287,18 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div style="padding-bottom: 180px">
-                            <h1>게시글 작성</h1>
-                            <form class="form-horizontal" method="post" name="fr" id="fr" onsubmit="return check()" action="">
+                            <h1>게시글 수정</h1>
+                            <form class="form-horizontal" method="post" name="fr3"  onsubmit="return check()" >
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputEmail3" style="font-size: 15px" class="col-sm-2 control-label">제목</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" style="background-color: white; width: 85%; " id="inputEmail3" name="title" placeholder="제목을 입력하세요" value=<%=writingDAO.getTitle(title)%>>
+                                        <input type="text" readonly  class="form-control"style="background-color: white; width: 230%; " id="inputEmail3" name="title" placeholder="제목을 입력하세요" value="<%=title%>">
                                     </div>
                                 </div>
                                 <div class="form-group" style=" margin-right: 400px">
                                     <label for="inputPassword3" class="col-sm-2 control-label" style="font-size: 15px">내용</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control" id="inputPassword3" rows="10" style="background-color: white; width: 85%" name="body" ><%=writingDAO.getBody(title)%></textarea>
+                                        <textarea class="form-control" id="inputPassword3" rows="10" style="background-color: white; width: 230%" name="body"><%=writingDAO.getBody(title)%></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -303,7 +306,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10" align="right" style="margin-right: 100px">
-                                        <input type="submit" id ="complete" class="btn btn-primary"  value="수정하기" onsubmit="mySubmit(1)">  <input type="button" id="preview" class="btn btn-primary" value="미리보기" onsubmit="mySubmit(23)">
+                                        <input type="submit" id ="complete" class="btn btn-primary"  value="수정하기" onclick="mySubmit(1)">  <input type="button" id="preview" class="btn btn-primary" value="미리보기" onclick="mySubmit(23)">
                                     </div>
                                 </div>
                             </form>

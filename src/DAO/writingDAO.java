@@ -37,6 +37,25 @@ public class writingDAO {
             return false;
         }
     }
+    public boolean repairwriting(String head, String body){
+        System.out.println("repairwriting(): "+head);
+        head = "#"+head;
+       String query =  "update writinginfo2 set  body = '"+ body + "'WHERE title ='"+head+"'";
+        try {
+          int n = statement.executeUpdate(query);
+            if(n >0){
+                System.out.println("고친거 디비에 넣기 성공");
+                return true;
+            }
+            else {
+                System.out.println("고친거 디비에 넣기 실패");
+                return  false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return true;
+    }
     public boolean setWriting(writingDTO dto) throws SQLException {
         if(overlapCheck(dto) == false){
             query = "insert into WRITINGINFO2 values('"+"empty_clob()"+"','"+dto.getTitle()+"','"+dto.getWriter()+"')";
