@@ -196,12 +196,23 @@
 		        <div class="navbar-header">
 					<!-- Mobile Toggle Menu Button -->
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-					<a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
-				</div>
-					<form method="post" action="/controller?action=search" class="form-inline" >
-						<input rightmargin="0" style="margin-left:34%; background-color: white;width: 30%;height: 20%" type="text" class="form-control" name="searchInfo">
-						<input type="submit" class="btn btn-primary" value="찾기" >
-					</form>
+					<a class="navbar-brand" href="main">PKNU WIKI</a>
+				</div>				<form method="post" action="/controller?action=search"
+											class="form-inline">
+
+					<table style="float: right"; width=40%; height:40px>
+						<tr>
+							<td align="right"><input style="background-color: white"
+													 type="text" class="form-control" name="searchInfo">
+							</td>
+							<td><input
+									type="submit" class="btn btn-primary" value="찾기">
+							</td>
+
+						</tr>
+					</table>
+
+				</form>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
 		            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
@@ -224,7 +235,7 @@
 						<div class="col-md-8 col-md-offset-2">
 							<img src="../static/images/whale.png" width="30%" height="30%" >
 							<h1 class="to-animate">PKNU WIKI</h1>
-							<h2 class="to-animate">우리가 만들어가는 부경대학교 <br><a href="writing.jsp" target="_self">글작성하러 가기</a></h2>
+							<h2 class="to-animate">우리가 만들어가는 부경대학교 <br><a href="writing" target="_self">글작성하러 가기</a></h2>
 						</div>
 					</div>
 				</div>
@@ -253,7 +264,7 @@
 						<i class="fh5co-intro-icon icon-login"></i>
 						<%if(session.getAttribute("loginCheck") == null){ %>
 						<h2>로그인</h2>
-						<p><a href="login.jsp" class="btn btn-primary">로그인</a></p><%} else{
+						<p><a href="login" class="btn btn-primary">로그인</a></p><%} else{
 					%><%
 						if((Boolean) session.getAttribute("loginCheck") == true ){%>
 
@@ -262,7 +273,7 @@
 
 							<%if(session.getAttribute("oneLogin")== null){
 							%><script type="text/javascript">swal(
-                        'Good job!',
+                        '로그인 성공하였습니다',
                         'Compete Login',
                         'success'
                     )</script>
@@ -270,7 +281,7 @@
 						<%
 							} else{%>
 						<h2>로그인</h2>
-						<p><a href="login.jsp" class="btn btn-primary">로그인</a></p>
+						<p><a href="login" class="btn btn-primary">로그인</a></p>
 							<%}
 						}%>
 
@@ -283,7 +294,7 @@
 						<i class="fh5co-intro-icon icon-user-plus"></i>
 						<h2>회원 가입</h2>
 						<p>회원가입을 하시면 글 작성 수정 등을 할 수 있습니다.</p>
-						<p><a href="signUp.jsp" class="btn btn-primary">회원가입</a></p>
+						<p><a href="signUp" class="btn btn-primary">회원가입</a></p>
 					</div>
 				</div>
 			</div>
@@ -364,7 +375,7 @@
 						<li>
 							<p>글머리: 1~6까지만 지원</p>
 						</li>
-					</ul> <a href="code.jsp">더알아보기</a>
+					</ul> <a href="code">더알아보기</a>
 					</h3>
 			</div>
 		</div>
@@ -382,100 +393,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="row row-bottom-padded-sm">
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="../images/work_1.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="../images/work_1.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-							<h2>Project 1</h2>
-							<span>Branding</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="../images/work_2.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="../images/work_2.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-							<h2>Project 2</h2>
-							<span>Web</span>
-						</div>
-					</a>
-				</div>
+				<table>
 
-				<div class="clearfix visible-sm-block"></div>
-
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="../images/work_3.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="../images/work_3.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-							<h2>Project 3</h2>
-							<span>Web</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="../images/work_4.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="../images/work_4.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-							<h2>Project 4</h2>
-							<span>UI/UX</span>
-						</div>
-					</a>
-				</div>
-
-				<div class="clearfix visible-sm-block"></div>
-
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="../images/work_5.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="../images/work_5.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-							<h2>Project 1</h2>
-							<span>Photography</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="../images/work_6.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="../images/work_6.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-							<h2>Project 2</h2>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
-
-				<div class="clearfix visible-sm-block"></div>
-
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="../images/work_7.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="../images/work_7.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-							<h2>Project 3</h2>
-							<span>Web</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="../images/work_8.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="../images/work_8.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-							<h2>Project 4</h2>
-							<span>Sketch</span>
-						</div>
-					</a>
-				</div>
-
-				<div class="clearfix visible-sm-block"></div>
-
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="../images/work_1.jpg" class="fh5co-project-item image-popup to-animate">
-						<img src="../images/work_1.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-							<h2>Project 2</h2>
-							<span>Illustration</span>
-						</div>
-					</a>
-				</div>
+				</table>
 			</div>
 		</div>
 	</section>

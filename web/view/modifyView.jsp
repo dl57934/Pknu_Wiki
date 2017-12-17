@@ -209,7 +209,7 @@
                if(session.getAttribute("loginCheck") == null){
            %>
         alert("글을 수정하려면 로그인이 필요합니다");
-        window.location.href="http://localhost:3000/PknuWiki/view/main.jsp";
+        window.location.href="http://localhost:3000/PknuWiki/view/main";
         <%}
 
         %>
@@ -231,7 +231,7 @@
             if(index == 1){
                 document.fr3.action = ' /controller?action=repairWriting';
             }if(index == 2){
-                document.fr3.action = 'preview.jsp';
+                document.fr3.action = 'preview';
             }
             document.fr3.submit();
         }
@@ -249,18 +249,25 @@
                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"
                    data-toggle="collapse" data-target="#navbar" aria-expanded="false"
                    aria-controls="navbar"><i></i></a> <a class="navbar-brand"
-                                                         href="main.jsp">PKNU WIKI</a>
+                                                         href="main">PKNU WIKI</a>
 
             </div>
 
             <form method="post" action="/controller?action=search"
                   class="form-inline">
-                <div style="float: right">
-                    <input rightmargin="0"
-                           style="background-color: white; width: 60%; height: 40px"
-                           type="text" class="form-control" name="searchInfo"> <input type="submit"
-                                                                    class="btn btn-primary" value="찾기">
-                </div>
+
+                <table style="float: right"; width=40%; height:40px>
+                    <tr>
+                        <td align="right"><input style="background-color: white"
+                                                 type="text" class="form-control" name="searchInfo">
+                        </td>
+                        <td><input
+                                type="submit" class="btn btn-primary" value="찾기">
+                        </td>
+
+                    </tr>
+                </table>
+
             </form>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right"></ul>

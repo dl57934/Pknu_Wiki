@@ -4,7 +4,9 @@ import DAO.memberDAO;
 import DAO.writingDAO;
 import DTO.memberDTO;
 import DTO.writingDTO;
-
+import org.apache.commons.mail.DefaultAuthenticator;
+import org.apache.commons.mail.Email;
+import org.apache.commons.mail.SimpleEmail;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -62,7 +64,61 @@ public class controller extends HttpServlet {
            case"repairWriting":
                 repairWriting(request,response);
                 break;
+           case "sendEmail":
+                sendEmail(request, response);
+                break;
        }
+    }
+    public void sendEmail(HttpServletRequest request, HttpServletResponse response) {
+        String toEmail = request.getParameter("schoolNumber");
+        System.out.println("상대방 이메일" + toEmail);
+        HttpSession session = request.getSession();
+
+        session.setAttribute("email",toEmail);
+        response.setContentType("text/html;charset=UTF-8");
+
+        if (toEmail.equals("")) {
+            try {
+                PrintWriter write = response.getWriter();
+                System.out.println("이메일을 입력하지 않았습니다");
+                write.println("<script type='text/javascript'>");
+                write.println("alert('이메일을 입력하지 않았습니다.');");
+                write.println("history.back();");
+                write.println("</script>");
+                write.flush();
+                write.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            int n = (int) (Math.random() * 89999) + 10000;
+            Integer randomNumber = new Integer(n);
+            session.setAttribute("ranNum",n);
+            Email email = new SimpleEmail();
+            email.setHostName("smtp.gmail.com");
+            email.setSmtpPort(587);
+            email.setAuthenticator(new DefaultAuthenticator("dl57934", "dngmadl14"));
+            email.setStartTLSRequired(true);
+            try {
+                email.setFrom("dl57934@gmail.com");
+                email.setSubject("부경위키 회원 인증");
+                email.setMsg(randomNumber.toString());
+                email.addTo(toEmail);
+                email.send();
+                try {
+                    PrintWriter write = response.getWriter();
+                    write.println("<script type='text/javascript'>");
+                    write.println("window.location.href='http://localhost:3000/PknuWiki/view/signUp';");
+                    write.println("</script>");
+                    write.flush();
+                    write.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
     public void repairWriting(HttpServletRequest request, HttpServletResponse response){
         String title = request.getParameter("title");
@@ -73,7 +129,7 @@ public class controller extends HttpServlet {
         {
             try {
                 title = URLEncoder.encode(title, "UTF-8");
-                response.sendRedirect("PknuWiki/view/view.jsp?title="+title);
+                response.sendRedirect("PknuWiki/view/view?title="+title);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -98,7 +154,7 @@ public class controller extends HttpServlet {
          String title = request.getParameter("title");
          try {
              title = URLEncoder.encode(title, "UTF-8");
-             response.sendRedirect("PknuWiki/view/modifyView.jsp?title="+title);
+             response.sendRedirect("PknuWiki/view/modifyView?title="+title);
          } catch (IOException e) {
              e.printStackTrace();
          }
@@ -114,9 +170,9 @@ public class controller extends HttpServlet {
              try {
                  if(writingDAO.overlapCheck(writingDTO)){
                         System.out.println("중복 발견");
-                        response.sendRedirect("PknuWiki/view/overlapView.jsp?title="+searchInfo);
+                        response.sendRedirect("PknuWiki/view/overlapView?title="+searchInfo);
                  }else{
-                        response.sendRedirect("PknuWiki/view/view.jsp?title="+searchInfo);
+                        response.sendRedirect("PknuWiki/view/view?title="+searchInfo);
                  }
              } catch (SQLException e) {
                  e.printStackTrace();
@@ -135,10 +191,10 @@ public class controller extends HttpServlet {
             System.out.println("로그인 성공");
             httpSession.setAttribute("id",id);
             httpSession.setAttribute("loginCheck",true);
-                response.sendRedirect("PknuWiki/view/main.jsp");
+                response.sendRedirect("PknuWiki/view/main");
         }else{
             httpSession.setAttribute("loginCheck",false);
-            response.sendRedirect("PknuWiki/view/login.jsp");
+            response.sendRedirect("PknuWiki/view/login");
         }
     }
      private void SignUp(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -148,6 +204,7 @@ public class controller extends HttpServlet {
     String name = request.getParameter("name");
     String pw = request.getParameter("password");
     String pwCheck = request.getParameter("passwordCheck");
+         System.out.println("pw: "+pw+" pwCheck: "+pwCheck);
     String schoolNumber = request.getParameter("schoolNumber");
      memberDTO dto = new memberDTO(id,pw,name,schoolNumber);
          response.setContentType("text/html;charset=utf-8");
@@ -170,13 +227,13 @@ public class controller extends HttpServlet {
         if(pw.equals(pwCheck)) {
             if(dao.signUp(dto)) {
                 System.out.println("회원가입 완료");
-                write.println("alert('부경위키에 환영합니다.');window.location.href='http://localhost:3000/PknuWiki/view/main.jsp';");
+                write.println("alert('부경위키에 환영합니다.');window.location.href='http://localhost:3000/PknuWiki/view/main';");
                 write.println("");
                 write.println("</script>");
                 write.flush();
                 write.close();
             }else{
-                response.sendRedirect("PknuWiki/view/signUp.jsp");
+                response.sendRedirect("PknuWiki/view/signUp");
             }
         }else{
             write.println("alert('비밀번호가 일치하지 않습니다.');");
@@ -193,7 +250,7 @@ public class controller extends HttpServlet {
         session.setAttribute("id","");
         session.setAttribute("oneLogin",null);
          try {
-             response.sendRedirect("PknuWiki/view/main.jsp");
+             response.sendRedirect("PknuWiki/view/main");
          } catch (IOException e) {
              e.printStackTrace();
          }
@@ -208,7 +265,7 @@ public class controller extends HttpServlet {
          try {
              if(dao.setWriting(dto) == true){
                     title = URLEncoder.encode(title, "UTF-8");
-                    response.sendRedirect("http://localhost:3000/PknuWiki/view/view.jsp?title="+title);
+                    response.sendRedirect("http://localhost:3000/PknuWiki/view/view?title="+title);
              }else {
                  response.setContentType("text/html;charset=utf-8");
                  PrintWriter write = response.getWriter();

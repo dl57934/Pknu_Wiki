@@ -25,5 +25,8 @@
     <orderEntry type="library" name="JAX-WS-Apache Axis" level="project" />
     <orderEntry type="library" name="ojdbc6_g" level="project" />
     <orderEntry type="library" name="txtmark-0.10" level="project" />
+    <orderEntry type="library" name="mail" level="project" />
+    <orderEntry type="library" name="activation" level="project" />
+    <orderEntry type="library" name="commons-email-1.5" level="project" />
   </component>
 </module>

@@ -189,18 +189,25 @@
             <div class="navbar-header">
                 <!-- Mobile Toggle Menu Button -->
                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a class="navbar-brand" href="main.jsp" >PKNU WIKI</a>
+                <a class="navbar-brand" href="main" >PKNU WIKI</a>
 
             </div>
 
             <form method="post" action="/controller?action=search"
                   class="form-inline">
-                <div style="float: right">
-                    <input rightmargin="0"
-                           style="background-color: white; width: 60%; height: 40px"
-                           type="text" class="form-control" name="searchInfo"> <input type="submit"
-                                                                    class="btn btn-primary" value="찾기">
-                </div>
+
+                <table style="float: right"; width=40%; height:40px>
+                    <tr>
+                        <td align="right"><input style="background-color: white"
+                                                 type="text" class="form-control" name="searchInfo">
+                        </td>
+                        <td><input
+                                type="submit" class="btn btn-primary" value="찾기">
+                        </td>
+
+                    </tr>
+                </table>
+
             </form>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right"></ul>

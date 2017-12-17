@@ -209,7 +209,7 @@
             if(session.getAttribute("loginCheck") == null){
         %>
         alert("글을 작성하려면 로그인이 필요합니다");
-        window.location.href="http://localhost:3000/PknuWiki/view/main.jsp";
+        window.location.href="http://localhost:3000/PknuWiki/view/main";
         <%}
 
         %>
@@ -239,7 +239,7 @@
                 if(index == 1){
                     document.fr.action = '/controller?action=writing';
                 }if(index == 2){
-                    document.fr.action = 'preview.jsp';
+                    document.fr.action = 'preview';
                 }
                 document.fr.submit();
                     }else{
@@ -248,8 +248,15 @@
             }
     </script>
 </head>
-<body>
 
+
+
+<!--링크 바꿔주기!!!!-->
+
+<link href="../static/css/writing_menu.css" rel='stylesheet'
+      type='text/css'>
+
+<body>
 <header role="banner" id="fh5co-header">
     <div class="container">
         <!-- <div class="row"> -->
@@ -260,16 +267,14 @@
                    data-toggle="collapse" data-target="#navbar" aria-expanded="false"
                    aria-controls="navbar"><i></i></a> <a class="navbar-brand"
                                                          href="main.jsp">PKNU WIKI</a>
-
             </div>
-
             <form method="post" action="/controller?action=search"
                   class="form-inline">
                 <div style="float: right">
                     <input rightmargin="0"
                            style="background-color: white; width: 60%; height: 40px"
-                           type="text" class="form-control" name="searchInfo"> <input type="submit"
-                                                                    class="btn btn-primary" value="찾기">
+                           type="text" class="form-control" name="searchInfo"> <input
+                        type="submit" class="btn btn-primary" value="찾기">
                 </div>
             </form>
             <div id="navbar" class="navbar-collapse collapse">
@@ -279,29 +284,48 @@
         <!-- </div> -->
     </div>
 </header>
+
 <section id="fh5co-home" data-section="home"
          style="background-image: url(../static/images/full_image_2.jpg);"
          data-stellar-background-ratio="0.5">
     <div class="gradient"></div>
     <div class="container ">
+
         <div class="text-wrap">
+            <div style="float: left">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#title">Title</a></li>
+                        <li><a href="#table">Table</a></li>
+                        <li><a href="#photo">Photo</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#map">Map</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="text-inner">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div style="padding-bottom: 180px">
                             <h1>게시글 작성</h1>
-                             <form class="form-horizontal" name ="fr" method="post" id="fr"  >
-                                <div class="form-group" style=" margin-right: 400px">
-                                    <label for="inputEmail3" style="font-size: 15px" class="col-sm-2 control-label">제목</label>
+                            <form class="form-horizontal" name="fr" method="post" id="fr">
+                                <div class="form-group" style="margin-right: 400px">
+                                    <label for="inputEmail3" style="font-size: 15px"
+                                           class="col-sm-2 control-label">제목</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" style="background-color: white; width: 230%; " id="inputEmail3" name="title" placeholder="제목을 입력하세요">
+                                        <input type="text" class="form-control"
+                                               style="background-color: white; width: 230%;"
+                                               id="inputEmail3" name="title" placeholder="제목을 입력하세요">
                                         </span>
                                     </div>
                                 </div>
-                                <div class="form-group" style=" margin-right: 400px">
-                                    <label for="inputPassword3" class="col-sm-2 control-label" style="font-size: 15px">내용</label>
+                                <div class="form-group" style="margin-right: 400px">
+                                    <label for="inputPassword3" class="col-sm-2 control-label"
+                                           style="font-size: 15px">내용</label>
                                     <div class="col-sm-10">
-                                        <textarea class="form-control textar" minlength="15" id="inputPassword3" rows="10" style="background-color: white; width: 230%" name="body"></textarea>
+											<textarea class="form-control textar"
+                                                      id="inputPassword3" rows="10"
+                                                      style="background-color: white; width: 230%" name="body" placeholder="내용을 입력하세요"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -309,7 +333,10 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10" align="right">
-                                        <input type="submit"  id ="complete" class="btn btn-primary" onclick="mySubmit(1)"  value="작성완료">  <input type="submit" onclick="mySubmit(2)" id="preview" class="btn btn-primary" value="미리보기">
+                                        <input type="submit" id="complete" class="btn btn-primary"
+                                               onclick="mySubmit(1)" value="작성완료"> <input
+                                            type="submit" onclick="mySubmit(2)" id="preview"
+                                            class="btn btn-primary" value="미리보기">
                                     </div>
                                 </div>
                             </form>
