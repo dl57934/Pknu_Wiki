@@ -242,8 +242,6 @@
                         <div style="padding-bottom: 180px">
                         <h1 class="to-animate">PKNU WIKI 로그인</h1>
                         <form method="post" action="/controller?action=login">
-                            <br>
-                            <br>
                             <%if(session.getAttribute("loginCheck") != null){
                                     if((Boolean)session.getAttribute("loginCheck")==false){
                             %>
@@ -256,17 +254,27 @@
                                    session.setAttribute("loginCheck",null); }
                             }%>
                         <div class="form-group">
-                            <span><lable>Id: &nbsp &nbsp</lable> <input type="text" name="id" style="color: #0b0b0b"></span>
-                        </div>
                             <br>
-                        <div class="form-group">
-                            <span><label>password: &nbsp &nbsp</label><input type="password" name="password" style="color: #0b0b0b"></span>
-                        </div>
+                            <table width="100%" height="150px" style="align-center">
+                                <tr>
+                                    <td align="right">아이디</td>
+                                    <td>&nbsp&nbsp&nbsp</td>
+                                    <td><input type="text" class="form-control" name="id"
+                                               style="background-color:white; color: black"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">비밀번호</td>
+                                    <td>&nbsp&nbsp&nbsp</td>
+                                    <td><input class="form-control" type="password"
+                                               name="password"  id="password"
+                                               style="background-color:white;color: black"></td>
+                                    <td><input class="btn btn-primary" type="submit" value="Login"></td>
+                                </tr>
+
+                            </table>
                             <br>
-                            <br>
-                            <div>
-                        <span> <input class="btn btn-primary" type="submit" value="Login">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="signUp.jsp" target="_blank">아이디가 없으신가요?</a></span>
-                        </div>
+                            <a href="signUp.jsp" target="_blank">아이디가 없으신가요?</a>
                         </form>
                         </div >
                     </div>

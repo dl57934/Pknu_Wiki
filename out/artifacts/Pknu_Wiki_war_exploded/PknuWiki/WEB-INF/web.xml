@@ -58,6 +58,14 @@
         <url-pattern>/PknuWiki/view/main</url-pattern>
     </servlet-mapping>
     <servlet>
+        <servlet-name>view</servlet-name>
+        <jsp-file>/PknuWiki/view/view.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>view</servlet-name>
+        <url-pattern>/PknuWiki/view/view</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>code</servlet-name>
         <jsp-file>/PknuWiki/view/code.jsp</jsp-file>
     </servlet>

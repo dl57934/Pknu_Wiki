@@ -313,7 +313,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10" align="right" style="margin-right: 100px">
-                                        <input type="submit" id ="complete" class="btn btn-primary"  value="수정하기" onclick="mySubmit(1)">  <input type="button" id="preview" class="btn btn-primary" value="미리보기" onclick="mySubmit(23)">
+                                        <input type="submit" id ="complete" class="btn btn-primary"  value="수정하기" onclick="mySubmit(1)">  <input type="button" id="preview" class="btn btn-primary" value="미리보기" onclick="mySubmit(2)">
                                     </div>
                                 </div>
                             </form>

@@ -298,7 +298,6 @@
                 <li>세번째</li>
                 <li>두번째</li>
             </ol>
-            <p>딱히 개선될 것 같지는 않다. 존 그루버가 신경안쓰고 있다고...</p>
             <h3><a href="#-순서없는-목록글머리-기호" aria-hidden="true" class="anchor" id="user-content--순서없는-목록글머리-기호"></a>● 순서없는 목록(글머리 기호)</h3>
             <pre><code>* 빨강
   * 녹색
