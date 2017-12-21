@@ -38,7 +38,7 @@ public class memberDAO {
         return true;
         }
     public boolean isSchoolNumber(String schoolNumber){
-        query = "select * from member where email='"+schoolNumber+"'";
+        query = "select * from member where Email='"+schoolNumber+"'";
         try {
             resultSet = statement.executeQuery(query);
             if (resultSet.next())  // 아이디 존재

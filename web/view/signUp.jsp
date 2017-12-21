@@ -200,11 +200,12 @@
             if(checkNum == ranNum){
                 $('#schoolNumber').val('<%=email%>');
                 $('#schoolNumber').attr("readonly",true);
-                <%session.setAttribute("checkEmail",true);%>
                 alert("이메일 인증 성공");
+                <%session.setAttribute("ranNum",null);%>
+                <%session.setAttribute("email",null);%>
+                <%session.setAttribute("checkEmail",null);%>
                 return true;
             }else {
-                <%session.setAttribute("checkEmail",false);%>
                 alert("이메일 인증 실패");
                 return false;
             }
@@ -213,8 +214,8 @@
         }
     </script>
 
-    <script type="text/javascript">
 
+    <script type="text/javascript">
         <%--<%
             if(session.getAttribute("loginCheck") == null){
         %>
@@ -223,31 +224,34 @@
         <%}
 
         %>--%>
+
         function check() {
             console.log(document.getElementById("password").value);
             if ($('#id').val() == "" || $('#schoolNumber').val() == "" || $('#passwordCheck') == "") {
                 alert("모든 입력칸에 값을 넣어주세요.");
                 return false;
-            } else
+            } else {
                 if(vlookup()){
-                    <%System.out.println("체크이메일 트루");%>
-                    <%session.setAttribute("ranNum","");%>
-                    <%session.setAttribute("email","");%>
+                    <%session.setAttribute("ranNum",null);%>
+                    <%session.setAttribute("email",null);%>
+                    <%session.setAttribute("checkEmail",null);%>
                     return true;
-                }else { //이메일 인증 실패
-                    <%session.setAttribute("email","");%>
-                    <%session.setAttribute("ranNum","");%>
+                }else {
+                    <%session.setAttribute("email",null);%>
+                    <%session.setAttribute("ranNum",null);%>
+                    <%session.setAttribute("checkEmail",null);%>
                     alert("이메일 인증이 실패하였습니다.");
                     return false;
                 }
             }
-
+        }
         function vlookup() {
             if(<%session.getAttribute("checkEmail");%>){
                 return true;
             }else{
                 return false;
             }
+        }
     </script>
 
 
@@ -316,21 +320,21 @@
                                 <div class="form-group">
                                     <table width="100%" height="350px">
                                         <tr>
-                                            <td align="right">이름&nbsp&nbsp&nbsp&nbsp&nbsp
+                                            <td align="right">이름</td>
                                             <td><input type="text" class="form-control" size="30"
                                                        style="background-color:white"
                                                        name="name"></td>
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td align="right">아이디&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                            <td align="right">아이디</td>
                                             <td><input type="text" class="form-control" name="id"
                                                        placeholder="6자리 이상" minlength="6" maxlength="12"
                                                        style="background-color:white; color: black"></td>
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td align="right">비밀번호&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                            <td align="right">비밀번호</td>
                                             <td><input class="form-control" type="password"
                                                        name="password" minlength="9" maxlength="12" id="password"
                                                        placeholder="9자리 이상 12자리 이하"
@@ -338,7 +342,7 @@
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td align="right">비밀번호 확인&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                            <td align="right">비밀번호 확인</td>
                                             <td><input class="form-control" type="password"
                                                        name="passwordCheck" id="passwordCheck"
                                                        style="background-color:white;color: #0b0b0b"></td>
@@ -346,11 +350,11 @@
                                         </tr>
 
                                         <tr>
-                                            <td align="right">부경대 웹메일&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                            <td align="right">부경대 웹메일</td>
                                             <td><input type="email" class="form-control"
                                                        name="schoolNumber" id="schoolNumber"
                                                        style="background-color:white;color: #0b0b0b"></td>
-                                            <td align="left">&nbsp&nbsp&nbsp&nbsp&nbsp
+                                            <td align="left">
                                                 <button id="sendButton" type="button"  onclick="sendEmail()"
                                                         class="btn-primary btn">학생 인증
                                                 </button>

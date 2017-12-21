@@ -1,11 +1,11 @@
 <%--
   Created by IntelliJ IDEA.
   User: dl579
-  Date: 2017-11-15
-  Time: 오전 1:43
+  Date: 2017-12-13
+  Time: 오전 1:36
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -16,30 +16,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PKNU WIKI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-    <meta name="author" content="FREEHTML5.CO" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.3/sweetalert2.min.css">
     <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
-    <!--
-      //////////////////////////////////////////////////////
-
-      FREE HTML5 TEMPLATE
-      DESIGNED & DEVELOPED by FREEHTML5.CO
-
-      Website: 		http://freehtml5.co/
-      Email: 			info@freehtml5.co
-      Twitter: 		http://twitter.com/fh5co
-      Facebook: 		https://www.facebook.com/fh5co
-
-      //////////////////////////////////////////////////////
-       -->
-
-    <!-- Facebook and Twitter integration -->
     <meta property="og:title" content=""/>
     <meta property="og:image" content=""/>
     <meta property="og:url" content=""/>
@@ -198,125 +180,74 @@
     <![endif]-->
 </head>
 <body>
-<header role="banner" id="fh5co-header">
+<section id="fh5co-about" data-section="Guide">
     <div class="container">
-        <!-- <div class="row"> -->
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <!-- Mobile Toggle Menu Button -->
-                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a class="navbar-brand" href="main">PKNU WIKI</a>
+        <div style="padding-bottom: 180px" name="main">
+            <hr>
+            <h1><a href="#2-마크다운-사용법문법" aria-hidden="true" class="anchor" id="user-content-2-마크다운-사용법문법"></a>1. 마크다운 사용법(문법)</h1>
+            <h2><a href="#21-헤더headers" aria-hidden="true" class="anchor" id="user-content-21-헤더headers"></a>1.1. 헤더Headers</h2>
+            <ul>
+                <li>
+                    <p>큰제목: 문서 제목</p>
+                    <pre><code>This is an H1
+=============
+</code></pre>
+                    <h1><a href="#this-is-an-h1" aria-hidden="true" class="anchor" id="user-content-this-is-an-h1"></a>This is an H1</h1>
+                </li>
+                <li>
+                    <p>작은제목: 문서 부제목</p>
+                    <pre><code>This is an H2
+-------------
+</code></pre>
+                    <h2><a href="#this-is-an-h2" aria-hidden="true" class="anchor" id="user-content-this-is-an-h2"></a>This is an H2</h2>
+                </li>
+                <li>
+                    <p>글머리: 1~6까지만 지원</p>
+                </li>
+            </ul>
+            <pre><code># This is a H1
+## This is a H2
+### This is a H3
+#### This is a H4
+##### This is a H5
+###### This is a H6
+</code></pre>
+            <h1><a href="#this-is-a-h1" aria-hidden="true" class="anchor" id="user-content-this-is-a-h1"></a>This is a H1</h1>
+            <h2><a href="#this-is-a-h2" aria-hidden="true" class="anchor" id="user-content-this-is-a-h2"></a>This is a H2</h2>
+            <h3><a href="#this-is-a-h3" aria-hidden="true" class="anchor" id="user-content-this-is-a-h3"></a>This is a H3</h3>
+            <h4><a href="#this-is-a-h4" aria-hidden="true" class="anchor" id="user-content-this-is-a-h4"></a>This is a H4</h4>
+            <h5><a href="#this-is-a-h5" aria-hidden="true" class="anchor" id="user-content-this-is-a-h5"></a>This is a H5</h5>
+            <h6><a href="#this-is-a-h6" aria-hidden="true" class="anchor" id="user-content-this-is-a-h6"></a>This is a H6</h6>
+            <p>####### This is a 7.</p>
 
-            </div>
-
-            <form method="post" action="/controller?action=search"
-                  class="form-inline">
-
-                <table style="float: right"; width=40%; height:40px>
-                    <tr>
-                        <td align="right"><input style="background-color: white"
-                                                 type="text" class="form-control" name="searchInfo">
-                        </td>
-                        <td><input
-                                type="submit" class="btn btn-primary" value="찾기">
-                        </td>
-
-                    </tr>
-                </table>
-
-            </form>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right"></ul>
-            </div>
-        </nav>
-        <!-- </div> -->
-    </div>
-</header>
-<section id="fh5co-home" data-section="home" style="background-image: url(../static/images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
-    <div class="gradient"></div>
-    <div class="container">
-        <div class="text-wrap">
-            <div class="text-inner">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div style="padding-bottom: 180px">
-                        <h1 class="to-animate">PKNU WIKI 로그인</h1>
-                        <form method="post" action="/controller?action=login">
-                            <br>
-                            <br>
-                            <%if(session.getAttribute("loginCheck") != null){
-                                    if((Boolean)session.getAttribute("loginCheck")==false){
-                            %>
-                            <script type="text/javascript">swal(
-                                '로그인 실패',
-                                '아이디 혹은 비밀번호가 다릅니다.',
-                                'error'
-                            )</script>
-                            <%
-                                   session.setAttribute("loginCheck",null); }
-                            }%>
-                        <div class="form-group">
-                            <span><lable>Id: &nbsp &nbsp</lable> <input type="text" name="id" style="color: #0b0b0b"></span>
-                        </div>
-                            <br>
-                        <div class="form-group">
-                            <span><label>password: &nbsp &nbsp</label><input type="password" name="password" style="color: #0b0b0b"></span>
-                        </div>
-                            <br>
-                            <br>
-                            <div>
-                        <span> <input class="btn btn-primary" type="submit" value="Login">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="signUp.jsp" target="_blank">아이디가 없으신가요?</a></span>
-                        </div>
-                        </form>
-                        </div >
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="slant"></div>
-</section>
-
-<footer id="footer" role="contentinfo">
-    <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
-    <div class="container">
-        <div class="">
-            <div class="col-md-12 text-center">
-                <p>&copy; 이상훈, 황선영<br>Created by 이상훈, 황선영<a href="http://ce.pknu.ac.kr/main/main.php" target="_blank">부경대학교 컴퓨터공학과</a></p>
-
-            </div>
-        </div>
-    </div>
-</footer>
+            <!-- jQuery -->
+            <script src="../static/js/jquery.min.js?ver=1"></script>
+            <!-- jQuery Easing -->
+            <script src="../static/js/jquery.easing.1.3.js?ver=1"></script>
+            <!-- Bootstrap -->
+            <script src="../static/js/bootstrap.min.js?ver=1"></script>
+            <!-- Waypoints -->
+            <script src="../static/js/jquery.waypoints.min.js?ver=1"></script>
+            <!-- Stellar Parallax -->
+            <script src="../static/js/jquery.stellar.min.js?ver=1"></script>
+            <!-- Counter -->
+            <script src="../static/js/jquery.countTo.js?ver=1"></script>
+            <!-- Magnific Popup -->
+            <script src="../static/js/jquery.magnific-popup.min.js?ver=1"></script>
+            <script src="../static/js/magnific-popup-options.js?ver=1"></script>
+            <!-- Google Map -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+            <script src="../static/js/google_map.js?ver=1"></script>
 
 
-<!-- jQuery -->
-<script src="../static/js/jquery.min.js?ver=1"></script>
-<!-- jQuery Easing -->
-<script src="../static/js/jquery.easing.1.3.js?ver=1"></script>
-<!-- Bootstrap -->
-<script src="../static/js/bootstrap.min.js?ver=1"></script>
-<!-- Waypoints -->
-<script src="../static/js/jquery.waypoints.min.js?ver=1"></script>
-<!-- Stellar Parallax -->
-<script src="../static/js/jquery.stellar.min.js?ver=1"></script>
-<!-- Counter -->
-<script src="../static/js/jquery.countTo.js?ver=1"></script>
-<!-- Magnific Popup -->
-<script src="../static/js/jquery.magnific-popup.min.js?ver=1"></script>
-<script src="../static/js/magnific-popup-options.js?ver=1"></script>
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-<script src="../static/js/google_map.js?ver=1"></script>
+            <!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 
+            <script src="../static/js/jquery.style.switcher.js?ver=1"></script>
 
-<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
-<script src="../static/js/jquery.style.switcher.js?ver=1"></script>
+            <!-- End demo purposes only -->
 
-<!-- End demo purposes only -->
-
-<!-- Main JS (Do not remove) -->
-<script src="../static/js/main.js?ver=1"></script>
+            <!-- Main JS (Do not remove) -->
+            <script src="../static/js/main.js?ver=1"></script>
 
 </body>
 </html>

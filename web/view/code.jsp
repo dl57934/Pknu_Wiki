@@ -298,6 +298,7 @@
                 <li>세번째</li>
                 <li>두번째</li>
             </ol>
+            <p>딱히 개선될 것 같지는 않다. 존 그루버가 신경안쓰고 있다고...</p>
             <h3><a href="#-순서없는-목록글머리-기호" aria-hidden="true" class="anchor" id="user-content--순서없는-목록글머리-기호"></a>● 순서없는 목록(글머리 기호)</h3>
             <pre><code>* 빨강
   * 녹색
@@ -429,7 +430,7 @@ __double underscores__
                 <a href="https://camo.githubusercontent.com/202c9ae1d457d6109be6c4cf13db9cac5fd708a6/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230" target="_blank"><img src="https://camo.githubusercontent.com/202c9ae1d457d6109be6c4cf13db9cac5fd708a6/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230" alt="석촌호수 러버덕" title="RubberDuck" data-canonical-src="http://cfile6.uf.tistory.com/image/2426E646543C9B4532C7B0" style="max-width:100%;"></a></p>
             <p>사이즈 조절 기능은 없기 때문에 <code>&lt;img width="" height=""&gt;&lt;/img&gt;</code>를 이용한다.</p>
             <hr>
-            <h2>1.7. 테이블 만들기</h2>
+            <h2>1.9. 테이블 만들기</h2>
             <pre><code>| 왼쪽 정렬 | 가운데 정렬 | 오른쪽 정렬 |
 |:--------|:--------:|--------:|
 | 내용 11 | 내용 12 | 내용 13 |

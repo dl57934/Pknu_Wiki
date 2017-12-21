@@ -56,19 +56,6 @@
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="../static/css/bootstrap.css?ver=1">
 
-    <!--
-        Default Theme Style
-        You can change the style.css (default color purple) to one of these styles
-
-        1. pink.css
-        2. blue.css
-        3. turquoise.css
-        4. orange.css
-        5. lightblue.css
-        6. brown.css
-        7. green.css
-
-        -->
     <link rel="stylesheet" href="../static/css/style.css?ver=1">
 
     <!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
@@ -205,56 +192,127 @@
     <script src="../static/js/respond.min.js?ver=1"></script>
     <![endif]-->
     <script>
-     <%
-            if(session.getAttribute("loginCheck") == null){
-        %>
+        <%
+               if(session.getAttribute("loginCheck") == null){
+           %>
         alert("글을 작성하려면 로그인이 필요합니다");
         window.location.href="http://localhost:3000/PknuWiki/view/main";
         <%}
 
         %>
 
-            function check() {
-                if(document.getElementById("inputEmail3").value == "") {
-                    alert("제목을 입력해주세요");
-                    $("#inputEmail3").focus();
-                    return false;
-                }
-                if( document.getElementById("inputPassword3").value == ""){
-                    alert("본문이 비어있습니다")
-                    $("#inputPassword3").focus();
-                    return false;
-                }
-                if($(".textar").val().length < 15){
-                    return false;
-                }
-                if($(".textar").val().length
-                    > 15){
-                    return true;
-                }
+        function check() {
+            if(document.getElementById("inputEmail3").value == "") {
+                alert("제목을 입력해주세요");
+                $("#inputEmail3").focus();
+                return false;
+            }
+            if( document.getElementById("inputPassword3").value == ""){
+                alert("본문이 비어있습니다")
+                $("#inputPassword3").focus();
+                return false;
+            }
+            if($(".textar").val().length < 15){
+                return false;
+            }
+            if($(".textar").val().length
+                > 15){
                 return true;
+            }
+            return true;
         };
-            function mySubmit(index) {
-                if(check()){
+        function mySubmit(index) {
+            if(check()){
                 if(index == 1){
                     document.fr.action = '/controller?action=writing';
                 }if(index == 2){
                     document.fr.action = 'preview';
                 }
                 document.fr.submit();
-                    }else{
-                    return false;
-                }
+            }else{
+                return false;
             }
+        }
     </script>
+    <script type="text/javascript">
+    var hover = function () {
+    var header1 = document.getElementById('header1');
+    var headerInfo1 =  document.getElementById('headerInfo1');
+    var headerIframe = document.getElementById('headerIframe');
+    var order1 = document.getElementById('목록');
+    var orderInfo1 = document.getElementById('목록Info');
+    var orderIframe = document.getElementById('목록Iframe');
+    var image1 = document.getElementById('image');
+    var imageInfo1 = document.getElementById('imageInfo');
+    var imageIframe = document.getElementById('imageIframe');
+    var link1 = document.getElementById('link');
+    var linkInfo1 = document.getElementById('linkInfo');
+    var linkIframe = document.getElementById('linkIframe');
+    var table1 = document.getElementById('table');
+    var tableInfo1 = document.getElementById('tableInfo');
+    var tableIframe = document.getElementById('tableIframe');
+    header1.onmouseover = function () {
+    headerInfo1.style.display = 'block';
+    headerIframe.width = document.body.scrollWidth*(9/10);
+    headerIframe.height = document.body.scrollHeight*(7/10);
+    headerIframe.scrolling = 'yes';
+    }
+    headerInfo1.onmouseout =function () {
+    headerInfo1.style.display = 'none';
+    }
+    order1.onmouseover = function () {
+    orderInfo1.style.display = 'block';
+    orderIframe.width = document.body.scrollWidth*(9/10);
+    orderIframe.height = document.body.scrollHeight*(7/10);
+    orderIframe.scrolling = 'yes';
+    }
+    orderInfo1.onmouseout =function () {
+    orderInfo1.style.display = 'none';
+    }
+    link1.onmouseover = function () {
+    linkInfo1.style.display = 'block';
+    linkIframe.width = document.body.scrollWidth*(9/10);
+    linkIframe.height = document.body.scrollHeight*(7/10);
+    linkIframe.scrolling = 'yes';
+    }
+    linkInfo1.onmouseout =function () {
+    linkInfo1.style.display = 'none';
+    }
+    image1.onmouseover = function () {
+    imageInfo1.style.display = 'block';
+    imageIframe.width = document.body.scrollWidth*(9/10);
+    imageIframe.height = document.body.scrollHeight*(7/10);
+    imageIframe.scrolling = 'yes';
+    }
+    imageInfo1.onmouseout =function () {
+    imageInfo1.style.display = 'none';
+    }
+    table1.onmouseover = function () {
+    tableInfo1.style.display = 'block';
+    tableIframe.width = document.body.scrollWidth*(9/10);
+    tableIframe.height = document.body.scrollHeight*(7/10);
+    tableIframe.scrolling = 'yes';
+    }
+    tableInfo1.onmouseout =function () {
+    tableInfo1.style.display = 'none';
+    }
+    }
+    window.onload = hover;
+    </script>
+    <style>
+        #header1  #headerInfo1  {display: none}
+        #목록 #목록Info {display: none}
+        #image #imageInfo {display: none}
+        #link #linkInfo {display: none}
+        #table #tableInfo {display: none}
+    </style>
 </head>
 
 
 
 <!--링크 바꿔주기!!!!-->
 
-<link href="../static/css/writing_menu.css" rel='stylesheet'
-      type='text/css'>
+
 
 <body>
 <header role="banner" id="fh5co-header">
@@ -263,19 +321,20 @@
         <nav class="navbar navbar-default">
             <div class="navbar-header">
                 <!-- Mobile Toggle Menu Button -->
-                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"
-                   data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                   aria-controls="navbar"><i></i></a> <a class="navbar-brand"
-                                                         href="main.jsp">PKNU WIKI</a>
+                <a class="navbar-brand" href="main.jsp">PKNU WIKI</a>
             </div>
             <form method="post" action="/controller?action=search"
                   class="form-inline">
-                <div style="float: right">
-                    <input rightmargin="0"
-                           style="background-color: white; width: 60%; height: 40px"
-                           type="text" class="form-control" name="searchInfo"> <input
-                        type="submit" class="btn btn-primary" value="찾기">
-                </div>
+                <table style="float: right"; width=40%; height:40px>
+                    <tr>
+                        <td align="right"><input style="background-color: white"
+                                                 type="text" class="form-control" name="searchInfo">
+                        </td>
+                        <td><input
+                                type="submit" class="btn btn-primary" value="찾기">
+                        </td>
+                    </tr>
+                </table>
             </form>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right"></ul>
@@ -293,13 +352,42 @@
 
         <div class="text-wrap">
             <div style="float: left">
-                <nav class="menu">
+                <nav class="menu" style="margin-top: 200px">
                     <ul>
-                        <li><a href="#title">Title</a></li>
-                        <li><a href="#table">Table</a></li>
-                        <li><a href="#photo">Photo</a></li>
-                        <li><a href="#video">Video</a></li>
-                        <li><a href="#map">Map</a></li>
+
+                        <div id="header1">
+                            <li> <a href="#" class="btn-primary">Header</a></li>
+                            <div id="headerInfo1">
+                                <iframe style="border: 0" src="header.jsp"  id="headerIframe"></iframe>
+                            </div>
+                        </div>
+
+                        <div id="목록">
+                            <li> <a href="#" class="btn-primary">목록</a></li>
+                            <div id="목록Info">
+                                <iframe style="border: 0" src="목록.jsp"  id="목록Iframe"></iframe>
+                            </div>
+                        </div>
+
+                        <div id="image">
+                            <li> <a href="#" class="btn-primary">image</a></li>
+                            <div id="imageInfo">
+                                <iframe style="border: 0" src="image.jsp"  id="imageIframe"></iframe>
+                            </div>
+                        </div>
+
+                        <div id="link">
+                            <li> <a href="#" class="btn-primary">링크</a></li>
+                            <div id="linkInfo">
+                                <iframe style="border: 0" src="link.jsp"  id="linkIframe"></iframe>
+                            </div>
+                        </div>
+                        <div id="table">
+                            <li> <a href="#" class="btn-primary">테이블</a></li>
+                            <div id="tableInfo">
+                                <iframe style="border: 0" src="table.jsp"  id="tableIframe"></iframe>
+                            </div>
+                        </div>
                     </ul>
                 </nav>
             </div>

@@ -129,7 +129,7 @@ public class writingDAO {
             e.printStackTrace();
         }
       return "<h1>존재하지 않는 글입니다.</h1>" +
-              "<h3><a href=writing>작성하시겠습니까?</a></h3>";
+              "<h3><a href=Pknuwiki/view/writing>작성하시겠습니까?</a></h3>";
     }
     public String multiView(String title){
         query = "select * from WRITINGINFO2 where title='"+title+"'";
@@ -150,6 +150,6 @@ public class writingDAO {
             e.printStackTrace();
         }
         return "<h1>존재하지 않는 글입니다.</h1>" +
-                "<h3><a href=writing>작성하시겠습니까?</a></h3>";
+                "<h3><a href=Pknuwiki/view/writing>작성하시겠습니까?</a></h3>";
     }
 }
