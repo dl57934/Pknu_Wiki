@@ -57,7 +57,7 @@
     <link rel="stylesheet" href="../static/css/bootstrap.css?ver=1">
 
     <link rel="stylesheet" href="../static/css/style.css?ver=1">
-
+    <link rel="stylesheet" href="../static/css/writing_menu.css">
     <!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
     <link rel="stylesheet" id="theme-switch"
           href="../static/css/style.css?ver=1">
