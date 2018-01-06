@@ -7,6 +7,8 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
+<jsp:useBean id="writing" class="DTO.writingDTO"></jsp:useBean>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -57,7 +59,6 @@
     <link rel="stylesheet" href="../static/css/bootstrap.css?ver=1">
 
     <link rel="stylesheet" href="../static/css/style.css?ver=1">
-    <link rel="stylesheet" href="../static/css/writing_menu.css">
     <!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
     <link rel="stylesheet" id="theme-switch"
           href="../static/css/style.css?ver=1">
@@ -356,34 +357,35 @@
                     <ul>
 
                         <div id="header1">
-                            <li> <a href="#" class="btn-primary">Header</a></li>
+                            <li> <a href="code.jsp" class="btn-primary">Header</a></li>
                             <div id="headerInfo1">
                                 <iframe style="border: 0" src="header.jsp"  id="headerIframe"></iframe>
                             </div>
                         </div>
-
+                        <br>
                         <div id="목록">
-                            <li> <a href="#" class="btn-primary">목록</a></li>
+                            <li> <a href="code.jsp" class="btn-primary">목록</a></li>
                             <div id="목록Info">
                                 <iframe style="border: 0" src="목록.jsp"  id="목록Iframe"></iframe>
                             </div>
                         </div>
-
+                        <br>
                         <div id="image">
-                            <li> <a href="#" class="btn-primary">image</a></li>
+                            <li> <a href="code.jsp" class="btn-primary">image</a></li>
                             <div id="imageInfo">
                                 <iframe style="border: 0" src="image.jsp"  id="imageIframe"></iframe>
                             </div>
                         </div>
-
+                        <br>
                         <div id="link">
-                            <li> <a href="#" class="btn-primary">링크</a></li>
+                            <li> <a href="code.jsp" class="btn-primary">링크</a></li>
                             <div id="linkInfo">
                                 <iframe style="border: 0" src="link.jsp"  id="linkIframe"></iframe>
                             </div>
                         </div>
+                        <br>
                         <div id="table">
-                            <li> <a href="#" class="btn-primary">테이블</a></li>
+                            <li> <a href="code.jsp" class="btn-primary">테이블</a></li>
                             <div id="tableInfo">
                                 <iframe style="border: 0" src="table.jsp"  id="tableIframe"></iframe>
                             </div>
@@ -402,7 +404,7 @@
                                            class="col-sm-2 control-label">제목</label>
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control"
-                                               style="background-color: white; width: 230%;"
+                                               style="background-color: white; width: 270%;"
                                                id="inputEmail3" name="title" placeholder="제목을 입력하세요">
                                         </span>
                                     </div>
@@ -413,7 +415,7 @@
                                     <div class="col-sm-10">
 											<textarea class="form-control textar"
                                                       id="inputPassword3" rows="10"
-                                                      style="background-color: white; width: 230%" name="body" placeholder="내용을 입력하세요"></textarea>
+                                                      style="background-color: white; width: 270%" name="body" placeholder="내용을 입력하세요"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">

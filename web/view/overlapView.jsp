@@ -8,6 +8,7 @@
 <%@ page import="java.sql.Connection" %>
 <%@ page import="DAO.writingDAO" %>
 <%@ page import="com.github.rjeschke.txtmark.Processor" %>
+<jsp:useBean id="writing" class="DTO.writingDTO"></jsp:useBean>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>

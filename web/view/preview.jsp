@@ -5,6 +5,8 @@
   Time: 오후 9:08
   To change this template use File | Settings | File Templates.
 --%>
+<jsp:useBean id="writing" class="DTO.writingDTO"></jsp:useBean>
+
 <%@ page import="com.github.rjeschke.txtmark.Processor" %>
 <%@ page import="java.net.URLEncoder" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>

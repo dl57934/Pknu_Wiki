@@ -5,6 +5,7 @@
   Time: 오전 1:36
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -180,6 +181,25 @@
     <![endif]-->
 </head>
 <body>
+<header role="banner" id="fh5co-header" style="background-color: #52d3aa;margin-top:0 ">
+    <div class="container">
+        <!-- <div class="row"> -->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <!-- Mobile Toggle Menu Button -->
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a class="navbar-brand" href="main" >PKNU WIKI</a>
+
+            </div>
+
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right"></ul>
+            </div>
+        </nav>
+        <!-- </div> -->
+    </div>
+</header>
 <section id="fh5co-about" data-section="Guide">
     <div class="container">
         <div style="padding-bottom: 180px" name="main">
