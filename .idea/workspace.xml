@@ -7,22 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a399034-e573-4914-80c8-e8e8b3ef19b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_email_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DAO/making_Password.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/activation.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_email_1_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/mail.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/txtmark_0_10.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_email_1_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mail.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_email_1_1.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pknu_Wiki.iml" afterPath="$PROJECT_DIR$/Pknu_Wiki.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DAO/memberDAO.java" afterPath="$PROJECT_DIR$/src/DAO/memberDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/controller.java" afterPath="$PROJECT_DIR$/src/controller/controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/main.jsp" afterPath="$PROJECT_DIR$/web/view/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/overlapView.jsp" afterPath="$PROJECT_DIR$/web/view/overlapView.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/preview.jsp" afterPath="$PROJECT_DIR$/web/view/preview.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/signUp.jsp" afterPath="$PROJECT_DIR$/web/view/signUp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/view.jsp" afterPath="$PROJECT_DIR$/web/view/view.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/view/writing.jsp" afterPath="$PROJECT_DIR$/web/view/writing.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,13 +37,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1886">
-              <caret line="99" column="24" lean-forward="false" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+            <state relative-caret-position="184">
+              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#repairWriting#0;class#controller#0" expanded="false" />
                 <element signature="method#discussion#0;class#controller#0" expanded="false" />
                 <element signature="method#preview#0;class#controller#0" expanded="false" />
@@ -84,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="making_Password.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="making_Password.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DAO/making_Password.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="457">
+              <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -316,7 +304,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15546875" />
     <property name="project.structure.side.proportion" value="0.20404412" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../pknu_Wiki/Pknu_Wiki" />
+    <property name="last_opened_file_path" value="C:/jsp/apache-tomcat-9.0.0.M26-windows-x64/apache-tomcat-9.0.0.M26/lib/commons-email-1.5.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
@@ -637,7 +625,7 @@
       <workItem from="1515318043383" duration="2252000" />
       <workItem from="1517231889251" duration="610000" />
       <workItem from="1519892523756" duration="1825000" />
-      <workItem from="1520273859156" duration="25000" />
+      <workItem from="1520273859156" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="컨트롤러 생성">
       <created>1510739915409</created>
@@ -807,18 +795,25 @@
       <option name="project" value="LOCAL" />
       <updated>1515255843982</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="ppt 자료 올림">
+      <created>1520273940285</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1520273940285</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269439000" />
+    <option name="totallyTimeSpent" value="269948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3247768" sideWeight="0.49375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -827,11 +822,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33112583" sideWeight="0.48958334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32671082" sideWeight="0.48958334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28333333" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28333333" sideWeight="0.49342105" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20520833" sideWeight="0.5065789" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -844,7 +839,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32119206" sideWeight="0.49375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -936,7 +930,8 @@
     <MESSAGE value="아이디 비밀번호 길이 제한 여러개의 제목을 가진거 하나로 보여주기 view 페이지 수정" />
     <MESSAGE value="토론기능 수정된거 디비에 업데이트 해주기" />
     <MESSAGE value="최종완성" />
-    <option name="LAST_COMMIT_MESSAGE" value="최종완성" />
+    <MESSAGE value="ppt 자료 올림" />
+    <option name="LAST_COMMIT_MESSAGE" value="ppt 자료 올림" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -958,7 +953,6 @@
         <state relative-caret-position="2277">
           <caret line="99" column="24" lean-forward="false" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#repairWriting#0;class#controller#0" expanded="false" />
             <element signature="method#discussion#0;class#controller#0" expanded="false" />
             <element signature="method#preview#0;class#controller#0" expanded="false" />
@@ -1043,28 +1037,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/controller.java">
+    <entry file="file://$PROJECT_DIR$/src/DAO/making_Password.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1886">
-          <caret line="99" column="24" lean-forward="false" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+        <state relative-caret-position="457">
+          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
             <element signature="method#repairWriting#0;class#controller#0" expanded="false" />
             <element signature="method#discussion#0;class#controller#0" expanded="false" />
             <element signature="method#preview#0;class#controller#0" expanded="false" />
             <element signature="method#modify#0;class#controller#0" expanded="false" />
             <element signature="method#search#0;class#controller#0" expanded="false" />
             <element signature="method#login#0;class#controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/making_Password.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1147,7 +1140,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>commons-email-1.1</last-edited>
+          <last-edited>commons-email-1.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

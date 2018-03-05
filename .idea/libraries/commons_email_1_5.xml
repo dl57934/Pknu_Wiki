@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="commons-email-1.5">
+    <CLASSES>
+      <root url="jar://C:/jsp/apache-tomcat-9.0.0.M26-windows-x64/apache-tomcat-9.0.0.M26/lib/commons-email-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

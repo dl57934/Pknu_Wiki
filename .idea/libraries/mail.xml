@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mail">
+    <CLASSES>
+      <root url="jar://C:/jsp/apache-tomcat-9.0.0.M26-windows-x64/apache-tomcat-9.0.0.M26/lib/mail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

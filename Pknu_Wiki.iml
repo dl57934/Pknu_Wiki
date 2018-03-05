@@ -33,6 +33,16 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="commons-email-1.1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/commons-email-1.1_2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="mail" level="project" />
+    <orderEntry type="library" name="commons-email-1.5" level="project" />
   </component>
 </module>
