@@ -67,7 +67,8 @@ public class memberDAO {
         return true;
     }
     public boolean signUp(memberDTO dto){
-        query = "insert into member values('"+ dto.getId()+"','"+dto.getPw()+"','"+dto.getName()+"','"+dto.getShoolNumber()+"')";
+
+        query = "insert into member values('"+ dto.getId()+"','"+making_Password.getPassword(dto.getPw(),making_Password.getSalt())+"','"+dto.getName()+"','"+dto.getShoolNumber()+"')";
         String query2 = "select * from webinfo";
         int memberNum =0;
         int resultNum = 0;
